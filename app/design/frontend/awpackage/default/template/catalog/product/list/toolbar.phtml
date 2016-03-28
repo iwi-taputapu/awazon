@@ -46,7 +46,7 @@
             <label><?php echo $this->__('Show') ?></label>
             <ul>
                 <?php foreach ($this->getAvailableLimit() as  $_key=>$_limit): ?>
-                    <li><span onclick="setLocation(this.value)" value="<?php echo $this->getLimitUrl($_key) ?>"<?php if($this->isLimitCurrent($_key)): ?> class="active"<?php endif ?>><?php echo $_limit ?></span></li>
+                    <li><span onclick="setLocation(this.id)" id="<?php echo $this->getLimitUrl($_key) ?>"<?php if($this->isLimitCurrent($_key)): ?> class="active"<?php endif ?>><?php echo $_limit ?></span></li>
                 <?php endforeach; ?>
             </ul>
             <!-- <select onchange="setLocation(this.value)">
