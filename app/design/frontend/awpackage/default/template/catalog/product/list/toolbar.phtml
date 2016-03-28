@@ -97,6 +97,7 @@
     <?php endif; ?>
     <div class="total">
         <p class="amount">
+            <label><?php echo $this->__('Total num') ?></label>
             <?php if($this->getLastPageNum()>1): ?>
                 <?php echo $this->__('Items %s to %s of %s total', $this->getFirstNum(), $this->getLastNum(), $this->getTotalNum()) ?>
             <?php else: ?>
