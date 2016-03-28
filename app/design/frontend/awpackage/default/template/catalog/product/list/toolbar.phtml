@@ -34,14 +34,6 @@
 <?php if($this->getCollection()->getSize()): ?>
 <div class="toolbar">
     <div class="pager">
-        <p class="amount">
-            <?php if($this->getLastPageNum()>1): ?>
-                <?php echo $this->__('Items %s to %s of %s total', $this->getFirstNum(), $this->getLastNum(), $this->getTotalNum()) ?>
-            <?php else: ?>
-                <strong><?php echo $this->__('%s Item(s)', $this->getTotalNum()) ?></strong>
-            <?php endif; ?>
-        </p>
-
         <div class="limiter">
             <label><?php echo $this->__('Show') ?></label>
             <ul>
@@ -102,5 +94,14 @@
         </div>
     </div>
     <?php endif; ?>
+    <div class="total">
+        <p class="amount">
+            <?php if($this->getLastPageNum()>1): ?>
+                <?php echo $this->__('Items %s to %s of %s total', $this->getFirstNum(), $this->getLastNum(), $this->getTotalNum()) ?>
+            <?php else: ?>
+                <strong><?php echo $this->__('%s Item(s)', $this->getTotalNum()) ?></strong>
+            <?php endif; ?>
+        </p>
+    </div>
 </div>
 <?php endif ?>
