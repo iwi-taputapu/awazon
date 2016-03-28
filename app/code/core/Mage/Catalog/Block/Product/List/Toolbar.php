@@ -220,28 +220,19 @@ class Mage_Catalog_Block_Product_List_Toolbar extends Mage_Core_Block_Template
      */
     public function setCollection($collection)
     {
-        //~
-        if ($order = $this->getCurrentOrder() == 'special_price') {
-        $collection
-        ->addAttributeToSelect(Mage::getSingleton('catalog/config')->getProductAttributes())
-        ->addMinimalPrice()
-        ->addFinalPrice()
-        ->addTaxPercents()
-        ->addUrlRewrite();
-        $collection->addExpressionAttributeToSelect('percentage', '(price_index.price - price_index.min_price) * 100 / price_index.price', array());
-        $collection->getSelect()->order('percentage DESC');
         $this->_collection = $collection;
 
-        $direction = $this->getCurrentDirection();
+        $this->_collection->setCurPage($this->getCurrentPage());
+
+        // we need to set pagination only if passed value integer and more that 0
         $limit = (int)$this->getLimit();
-        $page = $this->getCurrentPage();
-
-        $this->_collection->setOrder($order, $direction);
-        $this->_collection->getSelect()->limit($limit, $limit*($page-1));
-        $this->_collection->load();
-
-        return $this;
+        if ($limit) {
+            $this->_collection->setPageSize($limit);
         }
+        if ($this->getCurrentOrder()) {
+            $this->_collection->setOrder($this->getCurrentOrder(), $this->getCurrentDirection());
+        }
+        return $this;
     }
 
     /**
