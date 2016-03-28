@@ -33,27 +33,6 @@
 ?>
 <?php if($this->getCollection()->getSize()): ?>
 <div class="toolbar">
-    <div class="pager">
-        <div class="limiter">
-            <label><?php echo $this->__('Show') ?></label>
-            <ul>
-                <?php foreach ($this->getAvailableLimit() as  $_key=>$_limit): ?>
-                    <li><span onclick="setLocation(this.id)" id="<?php echo $this->getLimitUrl($_key) ?>"<?php if($this->isLimitCurrent($_key)): ?> class="active"<?php endif ?>><?php echo $_limit ?></span></li>
-                <?php endforeach; ?>
-            </ul>
-            <!-- <select onchange="setLocation(this.value)">
-            <?php foreach ($this->getAvailableLimit() as  $_key=>$_limit): ?>
-                <option value="<?php echo $this->getLimitUrl($_key) ?>"<?php if($this->isLimitCurrent($_key)): ?> selected="selected"<?php endif ?>>
-                    <?php echo $_limit ?>
-                </option>
-            <?php endforeach; ?>
-            </select> --> 
-            <!-- <?php echo $this->__('per page') ?> -->
-        </div>
-
-        <?php echo $this->getPagerHtml() ?>
-
-    </div>
 
     <?php if( $this->isExpanded() ): ?>
     <div class="sorter">
@@ -95,6 +74,29 @@
         </div>
     </div>
     <?php endif; ?>
+    
+    <div class="pager">
+        <div class="limiter">
+            <label><?php echo $this->__('Show') ?></label>
+            <ul>
+                <?php foreach ($this->getAvailableLimit() as  $_key=>$_limit): ?>
+                    <li><span onclick="setLocation(this.id)" id="<?php echo $this->getLimitUrl($_key) ?>"<?php if($this->isLimitCurrent($_key)): ?> class="active"<?php endif ?>><?php echo $_limit ?></span></li>
+                <?php endforeach; ?>
+            </ul>
+            <!-- <select onchange="setLocation(this.value)">
+            <?php foreach ($this->getAvailableLimit() as  $_key=>$_limit): ?>
+                <option value="<?php echo $this->getLimitUrl($_key) ?>"<?php if($this->isLimitCurrent($_key)): ?> selected="selected"<?php endif ?>>
+                    <?php echo $_limit ?>
+                </option>
+            <?php endforeach; ?>
+            </select> --> 
+            <!-- <?php echo $this->__('per page') ?> -->
+        </div>
+
+        <?php echo $this->getPagerHtml() ?>
+
+    </div>
+
     <div class="total">
         <p class="amount">
             <label><?php echo $this->__('Total num') ?></label>
