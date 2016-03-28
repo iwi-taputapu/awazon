@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<package>
+    <name>DigitalPianism_AjaxLogin</name>
+    <version>0.2.6</version>
+    <stability>stable</stability>
+    <license uri="http://opensource.org/licenses/osl-3.0.php">OSL v3.0</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Adds AJAX popups to the login/logout top links and forgot password functionalities.</summary>
+    <description>&lt;h2&gt;Overview&lt;/h2&gt;&#xD;
+&#xD;
+&lt;p&gt;This extension adds AJAX to the top links on Magento frontend so customers are able to connect to their account without loading an extra page.&lt;/p&gt;&#xD;
+&#xD;
+&lt;p&gt;They can also use the forgot password form and logout from this AJAX popup.&lt;/p&gt;&#xD;
+&#xD;
+&lt;h2&gt;Configuration&lt;/h2&gt;&#xD;
+&#xD;
+&lt;p&gt;Access the module configuration under System &gt; Configuration &gt; Digital Pianism &gt; Ajax Login.&lt;/p&gt;&#xD;
+&#xD;
+&lt;p&gt;The module is enabled by default but you can disable it here if you need to.&lt;/p&gt;&#xD;
+&#xD;
+</description>
+    <notes>- Fix a bug where customer registration would not work on Magento &lt;= 1.9.0.1</notes>
+    <authors><author><name>Digital Pianism</name><user>digitalpianism</user><email>contact@digital-pianism.com</email></author></authors>
+    <date>2016-03-08</date>
+    <time>14:42:41</time>
+    <contents><target name="magecommunity"><dir name="DigitalPianism"><dir name="AjaxLogin"><dir name="Helper"><file name="Data.php" hash="1a04218d84eb0ad89d072f421cc2f993"/></dir><dir name="controllers"><file name="IndexController.php" hash="97e295a5ae7d5af4db22085dc4dda5a1"/></dir><dir name="etc"><file name="adminhtml.xml" hash="2569f90cd6868d15e41f4788c61e7638"/><file name="config.xml" hash="82d635432f9a436990114d915661feeb"/><file name="system.xml" hash="71c81e7c67e405512bb5ed0729bfa2de"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="DigitalPianism_AjaxLogin.xml" hash="ff28627543caa7543c763f21ef4a5683"/></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="template"><dir name="digitalpianism"><dir name="ajaxlogin"><file name="index.phtml" hash="f081c58c74c574160592d8b696cfff08"/><file name="register.phtml" hash="94552ee6972d6603d67f00d853099249"/></dir></dir></dir><dir name="layout"><dir name="digitalpianism"><file name="ajaxlogin.xml" hash="f00c699d92c9ae98ffb6da11e3059f67"/></dir></dir></dir></dir></dir></target><target name="mageskin"><dir name="frontend"><dir name="base"><dir name="default"><dir name="css"><dir name="digitalpianism"><dir name="ajaxlogin"><file name="styles.css" hash="8a7f560e5041e52904858828acf378e9"/></dir></dir></dir><dir name="images"><dir name="digitalpianism"><dir name="ajaxlogin"><file name="ajax-loader.gif" hash="b256d80f54c1415d7a6a6fdec39769f4"/><file name="box-content-bg.gif" hash="f5344140a3a9ad4267687b8ec40c5751"/><file name="box-header-bg.gif" hash="e1e109e8f6bfc2f2ccef04769553c60c"/><file name="cancel_round.png" hash="afcb08c1bdcdb7f9922ea289906fdfbf"/><file name="close.png" hash="0aa9c71e1e00deb929514c3b004e30c2"/><file name="shd-medium.png" hash="ed62cea276345a5003a4a6c6f47c1071"/><file name="spinner.gif" hash="73e57937304d89f251e7e540a24b095a"/></dir></dir></dir><dir name="js"><dir name="digitalpianism"><dir name="ajaxlogin"><file name="script.js" hash="f8c7f4beb9d2890e03b12a27e0a9cb00"/></dir></dir></dir></dir></dir></dir></target><target name="magelocale"><dir name="fr_FR"><file name="DigitalPianism_AjaxLogin.csv" hash="6eb7c029c2d98c59b574889e8380ccc2"/></dir><dir name="en_US"><file name="DigitalPianism_AjaxLogin.csv" hash="fd8a1490469491f382a9e0463e3de38b"/></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>4.1.0</min><max>6.0.0</max></php></required></dependencies>
+</package>

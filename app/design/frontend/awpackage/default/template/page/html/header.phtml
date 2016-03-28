@@ -1,0 +1,85 @@
+<?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magento.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magento.com for more information.
+ *
+ * @category    design
+ * @package     base_default
+ * @copyright   Copyright (c) 2006-2016 X.commerce, Inc. and affiliates (http://www.magento.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+/**
+ * @var Mage_Page_Block_Html_Header $this
+ */
+?>
+<div class="header-container">
+    <div class="top_nav">
+        <div class="top_nav_inner">
+            <?php echo $this->getLayout()->createBlock("cms/block")->setBlockId("top_nav_left")->toHtml() ?>
+            <div class="top_nav_center">
+                <p class="welcome-msg"><?php echo $this->getChildHtml('welcome') ?> <?php echo $this->getAdditionalHtml() ?></p>
+            </div>
+            <?php echo $this->getLayout()->createBlock("cms/block")->setBlockId("login_link")->toHtml() ?>
+        </div>
+    </div>
+    <div class="header">
+        <div class="logo"><strong><?php echo $this->getLogoAlt() ?></strong><a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo"><img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a>
+        <div class="header_links">
+            <?php echo $this->getLayout()->createBlock("cms/block")->setBlockId("header_links_left")->toHtml() ?>
+            <?php echo $this->getLayout()->createBlock("cms/block")->setBlockId("header_links_right")->toHtml() ?>
+        </div>
+        <?php echo $this->getLayout()->createBlock("cms/block")->setBlockId("work_time")->toHtml() ?>
+        <?php echo $this->getLayout()->createBlock("cms/block")->setBlockId("call_order")->toHtml() ?>
+        </div>
+        <?php echo $this->getChildHtml('topContainer'); ?>
+    </div>
+    <div class="bottom_nav">
+        <div class="bottom_nav_inner">
+            <div class="bottom_nav_left">
+                <?php echo $this->getLayout()->createBlock("cms/block")->setBlockId("fallback_menu")->toHtml() ?>
+            </div>
+            <div class="bottom_nav_center"><?php echo $this->getChildHtml('topSearch') ?></div>
+            <div class="bottom_nav_right">
+                <?php echo $this->getLayout()->createBlock("cms/block")->setBlockId("cart_label")->toHtml() ?>
+                <div class="cart">
+                    <?php
+                        $count = $this->helper('checkout/cart')->getSummaryCount();  //get total items in cart
+                        $total = $this->helper('checkout/cart')->getQuote()->getGrandTotal(); //get total price
+                        if($count==0)
+                        {
+                            echo $this->__('<a class="top-link-cart" href="http://www.awazon.ru/checkout/cart/" class="cartgo">В корзине: <span>0</span> товаров</a>',$count);
+                        }
+                        if($count==1)
+                        {
+                            echo $this->__('<a class="top-link-cart" href="http://www.awazon.ru/checkout/cart/" class="cartgo">В корзине: <span>1</span> товар</a>',$count);
+                        }
+                        if($count==2 || $count==3 || $count==4)
+                        {
+                            echo $this->__('<a class="top-link-cart" href="http://www.awazon.ru/checkout/cart/" class="cartgo">В корзине: <span>%s</span> товара</a>',$count);
+                        }
+                        if($count>4)
+                        {
+                            echo $this->__('<a class="top-link-cart" href="http://www.awazon.ru/checkout/cart/" class="cartgo">В корзине: <span>%s</span> товаров</a>',$count);
+                        }
+                        echo $this->__('<a class="top-link-cart" href="http://www.awazon.ru/checkout/cart/" class="cartgo">На сумму: <span>%s</span></a>', $this->helper('core')->formatPrice($total, false));
+                    ?>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout version="3.0.15">
+    <adminhtml_smartslider3_index>
+        <reference name="content">
+            <block type="core/template" name="nextendsmartslider3" template="smartslider3/index.phtml"></block>
+        </reference>
+    </adminhtml_smartslider3_index>
+</layout>

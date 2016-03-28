@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Nextend2_Nextend2>
+            <active>true</active>
+            <codePool>community</codePool>
+        </Nextend2_Nextend2>
+    </modules>
+</config>

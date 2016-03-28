@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Nextend2_SmartSlider3>
+            <active>true</active>
+            <codePool>community</codePool>
+        </Nextend2_SmartSlider3>
+    </modules>
+</config>

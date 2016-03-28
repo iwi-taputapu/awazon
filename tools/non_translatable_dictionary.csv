@@ -1,0 +1,33 @@
+Magento,Magento,module,Magento_Backend
+.,.,module,Magento_Braintree
+123,123,module,Magento_Catalog
+"%1 - %2","%1 - %2",module,Magento_CatalogSearch
+"<pre>' . . . . '</pre>","<pre>' . . . . '</pre>",module,Magento_Email
+"%name,","%name,",theme,frontend/Magento/luma
+"%name,","%name,",module,Magento_Customer
+"%name,","%name,",module,Magento_SendFriend
+"<a href=""tel:%store_phone"">%store_phone</a>","<a href=""tel:%store_phone"">%store_phone</a>",theme,frontend/Magento/luma
+"%customer_name,","%customer_name,",theme,frontend/Magento/luma
+Webservicex,Webservicex,module,Magento_Directory
+%1,%1,module,Magento_Variable
+%1,%1,module,Magento_Widget
+"Excel XML","Excel XML",module,Magento_SalesRule
+"label_value' 'label_value' 'frontend_label","label_value' 'label_value' 'frontend_label",module,Magento_Weee
+CMS,CMS,module,Magento_Widget
+"%customer_name,","%customer_name,",module,Magento_Sales
+"Google API","API Google",module,Magento_GoogleAnalytics
+frontend_label,frontend_label,module,Magento_Catalog
+fl,fl,module,Magento_Catalog
+"HTTPS (SSL)","HTTPS (SSL)",module,Magento_Config
+some_label,some_label,module,Magento_Config
+some_comment,some_comment,module,Magento_Config
+U,U,module,Magento_Downloadable
+error123,error123,module,Magento_Quote
+error345,error345,module,Magento_Quote
+"%1 %2","%1 %2",module,Magento_Review
+CAPTCHA,CAPTCHA,module,Magento_Captcha
+" "," ",module,Magento_ImportExport
+&nbsp;,&nbsp;,module,Magento_Braintree
+"Google Analytics","Google Analytics",module,Magento_GoogleAnalytics
+"Google AdWords","Google AdWords",module,Magento_GoogleAdwords
+JavaScript/CSS,JavaScript/CSS,module,Magento_Backend

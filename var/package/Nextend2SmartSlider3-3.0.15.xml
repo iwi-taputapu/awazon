@@ -1,0 +1,1494 @@
+<?xml version="1.0"?>
+<package>
+  <name>Nextend2SmartSlider3</name>
+  <version>3.0.15</version>
+  <stability>stable</stability>
+  <license uri="http://www.gnu.org/licenses/gpl-3.0.txt">GNU GENERAL PUBLIC LICENSE V3</license>
+  <channel>community</channel>
+  <extends/>
+  <summary/>
+  <description/>
+  <notes>No notes</notes>
+  <authors>
+    <author>
+      <name>Nextendweb.com</name>
+      <user>nextendroland</user>
+      <email>support@nextendweb.com</email>
+    </author>
+  </authors>
+  <date>2015-11-01</date>
+  <time>00:00:00</time>
+  <compatible/>
+  <dependencies>
+    <required>
+      <php>
+        <min>5.0.0</min>
+        <max>8.0.0</max>
+      </php>
+    </required>
+  </dependencies>
+  <contents>
+    <target name="mageetc">
+      <dir name="modules">
+        <file name="Nextend2.xml" hash="e46fb6d08c1a8fe57627360b2cf24d07"/>
+        <file name="Nextend2_SmartSlider3.xml" hash="f7a31272e12ad73c9e7ace76813289bd"/>
+      </dir>
+    </target>
+    <target name="magecommunity">
+      <dir name="Nextend2">
+        <dir name="library">
+          <dir name="applications">
+            <dir name="system">
+              <dir name="backend">
+                <dir name="controllers">
+                  <dir name="ajax">
+                    <file name="Animation.php" hash="b4569b9183b306cb98173be6b1728c95"/>
+                    <file name="Aviary.php" hash="49433ba32f2b3bacb446295f907e0786"/>
+                    <file name="Browse.php" hash="a7b04efb239effe506e964b05495f3fe"/>
+                    <file name="Content.php" hash="7ce77204083dcc8b5582e7e10bcf7d34"/>
+                    <file name="Font.php" hash="d5d135acfc68daf4dde6d0530de74aa3"/>
+                    <file name="Image.php" hash="5899ee19842387a07bd53dc9fabcefce"/>
+                    <file name="Link.php" hash="0a38f8648242a847b5d2b22fab517894"/>
+                    <file name="Style.php" hash="9e36189594c638be89c4c5e503b1e62a"/>
+                  </dir>
+                  <file name="Animation.php" hash="2d3b4df1387983b04421cb9b4d936066"/>
+                  <file name="Browse.php" hash="5517c226da115b1f409bbf91a5b7f872"/>
+                  <file name="Dashboard.php" hash="198f827b16ccb3a7009178acdd7246df"/>
+                  <file name="Font.php" hash="dd8302b7cb07fa5ce81833ba69aedd12"/>
+                  <file name="Help.php" hash="300edf282a13e30add22c75365d4fa52"/>
+                  <file name="Image.php" hash="cc728103c372e660bb5035ce82f2e8b8"/>
+                  <file name="Install.php" hash="37173687bb491e1010a3ed3dba93d504"/>
+                  <file name="Login.php" hash="55e436ede66b196cc9bd40c97a378d5e"/>
+                  <file name="Settings.php" hash="9228d30e4c452a2fd44e19305b03e237"/>
+                  <file name="Style.php" hash="24431bbdacd3f20f4874ccfd8a2e63d7"/>
+                </dir>
+                <dir name="helpers">
+                  <dir name="controllers">
+                    <file name="VisualManager.php" hash="1d1be436f9bbdf556d97ee6f4724dc87"/>
+                    <file name="VisualManagerAjax.php" hash="b7254fab8e0c3a5df01473b90272fd45"/>
+                  </dir>
+                </dir>
+                <dir name="inline">
+                  <dir name="sidebar">
+                    <file name="animation.php" hash="a52b607782d38103099838dfbb7a2989"/>
+                    <file name="font.php" hash="61c45fde91894b628b7e414b4c00660d"/>
+                    <file name="image.php" hash="d41d8cd98f00b204e9800998ecf8427e"/>
+                    <file name="settings.php" hash="24a12477de3e6b7eb4e0ed8a91e2a45c"/>
+                    <file name="style.php" hash="8ce63935ec72da405cc0755d70567569"/>
+                  </dir>
+                </dir>
+                <dir name="layouts">
+                  <file name="default.php" hash="28da60fbec764b1eae2a8a2599093610"/>
+                  <file name="full.php" hash="2404e067161b9a71c85474268bbf0dab"/>
+                  <file name="fulllightbox.php" hash="1a37b7bd79d48ba13a11ff232ff17b22"/>
+                  <file name="lightbox.php" hash="9d8eb5e60b18d34499064d843cbea21c"/>
+                  <file name="modal.php" hash="0d5d21b4fac408a3955c21bcce6a7527"/>
+                </dir>
+                <file name="N2SystemApplicationTypeBackend.php" hash="ab382af2be9db5a81536e491ea08609a"/>
+                <dir name="views">
+                  <dir name="animation">
+                    <file name="index.php" hash="e611f335a622b5572694d630d2224dde"/>
+                    <file name="topbar.php" hash="1651d1a7da16aac8385abcf1e61c7b46"/>
+                  </dir>
+                  <dir name="dashboard">
+                    <file name="index.php" hash="dd3817344af9e7804e9468f34295d385"/>
+                  </dir>
+                  <dir name="defaults">
+                    <file name="noaccess.php" hash="85d3a63f3bdaaf1ec926db141a35d7d8"/>
+                  </dir>
+                  <dir name="font">
+                    <file name="index.php" hash="df838654dfc14e46b0b2f61ca371c1a6"/>
+                    <file name="topbar.php" hash="55d72fb9eb4c790784e8b383c41b8819"/>
+                  </dir>
+                  <dir name="help">
+                    <file name="index.php" hash="8365cf1b578f316aa634f1c3bfc5a17d"/>
+                  </dir>
+                  <dir name="image">
+                    <file name="index.php" hash="8dc2d56e27380e1f873d267d1a8bb902"/>
+                    <file name="topbar.php" hash="42bb04686453907c9bcdd3b5be4ae516"/>
+                  </dir>
+                  <dir name="login">
+                    <file name="index.php" hash="9b5b75621a5e65cf4a0df95fcd0a99fd"/>
+                  </dir>
+                  <dir name="settings">
+                    <file name="aviary.php" hash="baaf457467e68744b450637cbed051f4"/>
+                    <file name="fonts.php" hash="b7451d7335cf4101c1eef08239bb3e52"/>
+                    <file name="index.php" hash="3a51c05b2eff63efdaec5cd264d93081"/>
+                    <file name="_view.php" hash="b8f0f7fec4c93681da8b9fbfa853642b"/>
+                  </dir>
+                  <dir name="style">
+                    <file name="index.php" hash="50767c4a80e92ba738c596992248e926"/>
+                    <file name="topbar.php" hash="fc5de9e7fecae4c9ff9d1183893e0fab"/>
+                  </dir>
+                </dir>
+              </dir>
+              <dir name="models">
+                <file name="animation.php" hash="f64bbd4cb9f20191d1cb0ddadbf66ba9"/>
+                <file name="font.php" hash="f4a5d1ba415442382d5c628001cf6f27"/>
+                <dir name="forms">
+                  <dir name="animation">
+                    <file name="extra.xml" hash="8121c7a56e25970392fffd6100deda6b"/>
+                    <file name="form.xml" hash="c7df17b6a0711b0e56c4f1d0c45762d4"/>
+                    <file name="sets.xml" hash="9d104518213a20632fa5283d205c9d87"/>
+                  </dir>
+                  <file name="aviary.xml" hash="21f88e1b6028f278761de296afe61136"/>
+                  <dir name="font">
+                    <dir name="element">
+                      <file name="decoration.php" hash="f311c7a9aab551fdd041b9044fa64713"/>
+                      <file name="family.php" hash="10161fcd3c8b6efe36a22fd3e8d3c614"/>
+                      <file name="fontpreset.php" hash="b06c8b24ea34f158c2a63da7ca538cc1"/>
+                      <file name="textalign.php" hash="608964f85dd37e5a0497665db8d8c16c"/>
+                    </dir>
+                    <file name="extra.xml" hash="a47e7c34c3ebc6db5de4096fedc789be"/>
+                    <file name="form.xml" hash="ab958b7c320b9f79f0085c074eaa482f"/>
+                    <file name="sets.xml" hash="a1d5fb835f0307833577318bb65d0ed2"/>
+                  </dir>
+                  <file name="fonts.xml" hash="bd8aaea0daa10ca094d819e1e0f9de1c"/>
+                  <file name="globalconfig.xml" hash="4dafcd93bea42d1c0740483fcbbba658"/>
+                  <dir name="image">
+                    <file name="form.xml" hash="e4bb226379245fbd45871728a7cdfda8"/>
+                  </dir>
+                  <file name="login.xml" hash="5e0bf74050636c2ee9d0250b5cc321a6"/>
+                  <dir name="style">
+                    <file name="extra.xml" hash="a47e7c34c3ebc6db5de4096fedc789be"/>
+                    <file name="form.xml" hash="d7cac9a010ff0ec3cf9278c054fd6931"/>
+                    <file name="sets.xml" hash="bd90826867cc89a1702c08e750183f00"/>
+                  </dir>
+                </dir>
+                <file name="image.php" hash="9e39386b7e182b64a6438947e590a285"/>
+                <file name="Install.php" hash="b2bbfa33b505845c0c4714292fbb05f9"/>
+                <file name="login.php" hash="d99413365634c345299126419bf73772"/>
+                <file name="style.php" hash="1b62d638bfe366b3208e38012bc37e8d"/>
+                <file name="visual.php" hash="7911cd95478e54ac8d82977fed16e819"/>
+              </dir>
+              <file name="N2SystemApplication.php" hash="b0cb405308fe5217b526f94c4333632e"/>
+              <file name="N2SystemApplicationInfo.php" hash="19807be8a8b837d9e5f810d9f81996c9"/>
+              <dir name="plugins">
+                <file name="loadplugin.php" hash="b88b36aa588c5f9c773a623f10830333"/>
+                <dir name="nextendfontservices">
+                  <dir name="google">
+                    <dir name="google">
+                      <file name="config.xml" hash="9b6217faad876e51f2a6875b23fe8425"/>
+                    </dir>
+                    <file name="google.php" hash="282f4c2980199d4bdb6a4a1c3350fdda"/>
+                  </dir>
+                  <file name="loadplugin.php" hash="91e4f691e813e8b027cc0cafc6b6f477"/>
+                </dir>
+              </dir>
+            </dir>
+          </dir>
+          <file name="cacert.pem" hash="5ff55c3011f9a00bd6bedb27eeea9b92"/>
+          <dir name="embedwidgets">
+            <dir name="box">
+              <file name="Box.php" hash="a1f9c4447604e96c503e7dabd6df080e"/>
+              <dir name="views">
+                <file name="view.php" hash="fcd9e8ed04f8d8ad50bb76f99c2aa16a"/>
+              </dir>
+            </dir>
+            <dir name="buttonmenu">
+              <file name="Buttonmenu.php" hash="c07037b86d2f5b88ab662951c490e6f8"/>
+              <dir name="views">
+                <file name="view.php" hash="8f0bf7cab9a2fa9829aacae706d4d573"/>
+              </dir>
+            </dir>
+            <dir name="definitionlist">
+              <file name="Definitionlist.php" hash="16b3dcd29828604b05cfb5411ba8d3cd"/>
+              <dir name="views">
+                <file name="view.php" hash="d36de9eafd05d7b1e857daf512ba689c"/>
+              </dir>
+            </dir>
+            <dir name="heading">
+              <file name="Heading.php" hash="0fb0cee02004ae556349b4e1c80c3a89"/>
+              <dir name="views">
+                <file name="view.php" hash="b13e6afb74070d3cfe7c84174653af6f"/>
+              </dir>
+            </dir>
+            <dir name="link">
+              <file name="Link.php" hash="7e2a4967e97a8e744d7b44256b74a77d"/>
+              <dir name="views">
+                <file name="view.php" hash="f84214fc43f665c79b92dc7a092b364f"/>
+              </dir>
+            </dir>
+            <dir name="listn">
+              <file name="Listn.php" hash="1640772a35708de03cecb0b6e2b5b223"/>
+              <dir name="views">
+                <file name="view.php" hash="f2e1e52c11688f857325cd1e46319e73"/>
+              </dir>
+            </dir>
+            <dir name="nav">
+              <file name="Nav.php" hash="59ec6118f125504aaa6d3bffbdc7d5f5"/>
+              <dir name="views">
+                <file name="view.php" hash="19367a393143f4d2dff51b8364eef951"/>
+              </dir>
+            </dir>
+            <dir name="topbar">
+              <file name="Topbar.php" hash="d6c1990e350f38b4c9b07e81ab07062e"/>
+              <dir name="views">
+                <file name="view.php" hash="4217fcf0b575fb37d75292e73251f347"/>
+              </dir>
+            </dir>
+          </dir>
+          <dir name="languages">
+            <file name="hu_HU.mo" hash="25754a3a465561b1bacaf292b0caabf6"/>
+          </dir>
+          <dir name="libraries">
+            <dir name="acl">
+              <file name="acl.php" hash="834e4d6717143fe356f11996391fd911"/>
+            </dir>
+            <dir name="ajax">
+              <file name="ajax.php" hash="6bab88533f728aed08689f344e014d6a"/>
+              <file name="response.php" hash="cbb680ba1c3a12e443a5b42b8d767926"/>
+            </dir>
+            <dir name="animations">
+              <file name="manager.php" hash="706c75895fa40992c37552fffe47d153"/>
+              <file name="renderer.php" hash="50b4bf48fbb252fa2f7af770d2a3875a"/>
+              <file name="storage.php" hash="68da95c8a1cadf7ca6412b94c834f69e"/>
+            </dir>
+            <dir name="assets">
+              <file name="assets.php" hash="6dba67adace3b287db4fb1a0352937e3"/>
+              <file name="cache.php" hash="8d522c1636e5d132c9b046f233a9c164"/>
+              <dir name="css">
+                <file name="assets.php" hash="497b8a19801eb92a6177a5bed8b3e773"/>
+                <file name="cache.php" hash="9736dae724a7104a7547849c373ddf76"/>
+                <file name="css.php" hash="9e294b2a25050af9189abca935a16618"/>
+              </dir>
+              <dir name="google">
+                <file name="fonts.php" hash="a386a6d0661fcbab218a3e15ddb02617"/>
+              </dir>
+              <dir name="js">
+                <file name="assets.php" hash="77f068aa5ad09183c915803874dbd748"/>
+                <file name="cache.php" hash="eac9305ae882b6bcdf6a424c44370816"/>
+                <file name="js.php" hash="601119965b41c9ad677cbb90ef03fae1"/>
+              </dir>
+              <dir name="less">
+                <file name="assets.php" hash="bfbb298c2edf6bfb414bb74d4cea6aad"/>
+                <file name="cache.php" hash="283a1dfabb2a0cbcbe89973f36587791"/>
+                <file name="less.php" hash="819c80a932bf049483aae127c54a3e61"/>
+                <file name="lessc.php" hash="b5252b7fe86b901caa47d07578e06f59"/>
+              </dir>
+              <file name="manager.php" hash="0a6375e3a6926281d61ef9c383e0fa94"/>
+              <file name="predefined.php" hash="caa4cd0e634876f2ddd827de6054a262"/>
+            </dir>
+            <dir name="browse">
+              <file name="browse.php" hash="89112466351167b87df835a833dd0678"/>
+            </dir>
+            <dir name="cache">
+              <file name="cache.php" hash="fd41bc7f94d882fd8de3cd1c1a102700"/>
+              <file name="combine.php" hash="db77a0f14c251038c3a408156f78b9ad"/>
+              <file name="image.php" hash="c6df287583fbcc4b6ddd3b15e81c3b5f"/>
+              <file name="manifest.php" hash="23634bd3914d1cc598cf9591c21a066c"/>
+              <file name="minifyJS.php" hash="beeb761f8634ea16a4be2b920c3ce97a"/>
+              <file name="simple.php" hash="106231c4cda7574140af3fc858dcf728"/>
+            </dir>
+            <dir name="data">
+              <file name="data.php" hash="5532e88133de38687eaab38528d855ee"/>
+            </dir>
+            <dir name="embedwidget">
+              <file name="embedwidget.php" hash="67cf9fa07b38ef90b8d750741ea4eb23"/>
+              <file name="interface.php" hash="e0e1021ad5c9b7fb9b89f744fdd742fd"/>
+            </dir>
+            <dir name="filesystem">
+              <file name="filesystem.php" hash="bfa8cd8d8b2411ad6191fc08be7b0b2a"/>
+            </dir>
+            <dir name="fonts">
+              <file name="fontmanager.php" hash="66a5971e15edc41a4e61000401fcedac"/>
+              <file name="fonts.php" hash="833e73381589f1ae46b32c18a19380af"/>
+              <file name="renderer.php" hash="e38f04bf69b92a69bec132442cdb2315"/>
+              <file name="storage.php" hash="124c8e55f2ee27a4eaa3be5ee7b4067d"/>
+            </dir>
+            <dir name="form">
+              <dir name="element">
+                <file name="autocomplete.php" hash="6a85161d18eea6bbc0bcefdc343f6f7d"/>
+                <file name="button.php" hash="6d779b46eb88a089e8ea3691f7613395"/>
+                <file name="checkbox.php" hash="6bc6f2d014af232d541256cbcf461bae"/>
+                <file name="clearcache.php" hash="9cf819ff7c01e5ee5878fda5a3bf450d"/>
+                <file name="color.php" hash="240f8963be7baa0ba017d1a18c919e00"/>
+                <file name="container.php" hash="b2da511466ff423bed1f89f7ae1134e2"/>
+                <file name="date.php" hash="2363304625b324182bb60e2f43505ce8"/>
+                <file name="easing.php" hash="b081ae25730934062ee402eaa6e830c1"/>
+                <file name="enabled.php" hash="72940a7e509b799e1f6655becde9d2d0"/>
+                <file name="filter.php" hash="aa32bf1ff9e2c1a8cb54cfcedc8663cb"/>
+                <file name="folders.php" hash="9fa42ed4de00a4514bd622edc4592bce"/>
+                <file name="foldersimage.php" hash="fb8423c11b3283dd9c004f0026ff2bc6"/>
+                <file name="font.php" hash="55a093c55cc0f8ba9454478f3e56240a"/>
+                <file name="group.php" hash="ddb778f8ab2db09437920e7602433c1f"/>
+                <file name="hidden.php" hash="01c8e1ed6ca60541a33c00dc1d7d8374"/>
+                <file name="iconmanager.php" hash="9598c29cdbe8ed78d87f586d967b8126"/>
+                <file name="image.php" hash="bf86df3c1ccbf0d5d825378a7439294a"/>
+                <file name="imagelist.php" hash="d1433f27ed857caf5e5f4811c70be841"/>
+                <file name="imagelistfromfolder.php" hash="ae97a608ea5640882cace28c2f109b4c"/>
+                <file name="imagelistfromfoldervalue.php" hash="e929c1cc8bb53b0670fd48f29304e2fb"/>
+                <file name="imagemanager.php" hash="dd85d9a994eb4f68042dddd202ca6b82"/>
+                <file name="joomlacomponentoptions.php" hash="c764628e315a56c1bc1c22a3d86cc4a5"/>
+                <file name="jqueryeasing.php" hash="deaa9b41a0e90d4f5a99112bb4878b1c"/>
+                <file name="list.php" hash="aff7f3bb99d4e2efc6fd491195d8e308"/>
+                <file name="mirror.php" hash="3c668e27be22bea94ccb2abaa4340a6a"/>
+                <file name="mixed.php" hash="806cd240558ff6bb378e271381aee861"/>
+                <file name="number.php" hash="0f0b4ed36b0a32fddcb1cd40b456374d"/>
+                <file name="numberautocomplete.php" hash="b3695fe43c4e8a8ea8ddb568350ee536"/>
+                <file name="onoff.php" hash="30376efb5ea2ea444f5247eb03e8c4d2"/>
+                <file name="password.php" hash="aaeaf585a3c9da9425df370515df7912"/>
+                <file name="plugingroup.php" hash="d3c0799ae197263c07e3581a9050e994"/>
+                <file name="pluginmatrix.php" hash="087e3a6d81ca0f6f8b5c2769519cf76e"/>
+                <file name="radio.php" hash="858f868408af935575c15b81ee562c77"/>
+                <file name="radiotab.php" hash="c080c0bce8d6b3c056807116bee5d612"/>
+                <file name="richtextarea.php" hash="9c20059565c93123b59590e66aecd180"/>
+                <file name="skin.php" hash="3f21499c34af579d0dd860a33bf8f5e9"/>
+                <file name="style.php" hash="41e4065c734b0d2b426236237ca1fc83"/>
+                <file name="subform.php" hash="dda7e2d65227771710cdc34a0d7425b5"/>
+                <file name="subformImage.php" hash="f9de11fce1d24a0ec63c5bc26b81bfce"/>
+                <file name="subpluginmatrix.php" hash="cd73448229ffa8e52343a19c1691a82b"/>
+                <file name="switcher.php" hash="17e7f3ce5c95ef9ab95c4bcf5cac420c"/>
+                <file name="text.php" hash="674a4685be85f955267fa588d42553cb"/>
+                <file name="textarea.php" hash="31ef60f088bb6a74520d39b8a07468b6"/>
+                <file name="textautocomplete.php" hash="f5b9d2f3263ce3be65b8cf50ee21afd1"/>
+                <file name="tmplist.php" hash="f46a05bf331782c0144ef75e69dcb86a"/>
+                <file name="token.php" hash="c93e62ed3c6cb43eaa2f78cf71a48938"/>
+                <file name="upload.php" hash="f410b5000b295593df7c6c3ff848b345"/>
+                <file name="url.php" hash="8fe2a3050c6707bcaaff3e4c88e0d405"/>
+              </dir>
+              <file name="element.php" hash="3037c0fd81652911814c823fff7ae0f1"/>
+              <file name="form.php" hash="9be2dd5493b9f9ab096e294d01619118"/>
+              <file name="tab.php" hash="bfbc16cbef5895c19cc4a20a6b2ef178"/>
+              <dir name="tabs">
+                <file name="darkraw.php" hash="87c0cac8f6475054154cdc8ecad61f47"/>
+                <file name="default.php" hash="ae3396bf8cf4b220c2888398b800e024"/>
+                <file name="groupped.php" hash="8e50d61c7adde771a408a99f6a30b683"/>
+                <file name="grouppedsidebar.php" hash="37d17e0a3f76cd20c76ec44c015e3c74"/>
+                <file name="horizontal.php" hash="2d3bb079e316d5b95ba7c5b77cfbd746"/>
+                <file name="naked.php" hash="ed11a7ef0ae4846cce734d0411955bb0"/>
+                <file name="placeholder.php" hash="8fad6d43fd2b215a466236ae5b3a37b9"/>
+                <file name="raw.php" hash="0e338f0482701d6acd7ad521936d7660"/>
+                <file name="tabbed.php" hash="f0e8de7aab4f04de1500cb2ab3b66f2d"/>
+                <file name="tabbedsidebar.php" hash="e68eb6a98462de7bae36706148cb1738"/>
+              </dir>
+            </dir>
+            <dir name="google">
+              <file name="fonts.php" hash="c88778bc9fbaa55fa6e5d155a4d80940"/>
+            </dir>
+            <dir name="helpers">
+              <file name="html.php" hash="592cb86c9dd5fba5932b8a01a611e1d6"/>
+              <file name="system.php" hash="67ccff945a523db05d118de1af52986b"/>
+            </dir>
+            <dir name="image">
+              <file name="aviary.php" hash="7e64c6e3e2b574e45cff1f1a0a5f1c65"/>
+              <file name="color.php" hash="2e2fc390ea7c4dc9d8d5204b938131f7"/>
+              <file name="helper.php" hash="166f540d6dfa083e9db98bd372c6978e"/>
+              <file name="image.php" hash="07d9988b53ae13bfec1518c55402c40a"/>
+              <file name="manager.php" hash="3d924e3cabeeaad775a25fca72a274dc"/>
+            </dir>
+            <dir name="link">
+              <file name="link.php" hash="6e25d39e9ee640cc9dd98fe3c1b9bd7d"/>
+            </dir>
+            <dir name="localization">
+              <file name="localization.php" hash="7b17143b7cc6b8590c77f5c1734d03a3"/>
+              <dir name="pomo">
+                <file name="entry.php" hash="eb148c7d02db4c96c7bcc6a2d276c22e"/>
+                <file name="mo.php" hash="c7aea72d10f387a63f768981483b6d57"/>
+                <file name="streams.php" hash="2bff9b99c510536c517e72b2d1f2a731"/>
+                <file name="translations.php" hash="99a81ea59de88663cbcdae4c96b57588"/>
+              </dir>
+            </dir>
+            <dir name="message">
+              <file name="message.php" hash="e32c820a7e3e5c293d02376a8820e6c5"/>
+            </dir>
+            <dir name="mobiledetect">
+              <file name="Mobile_Detect.php" hash="a1f6bef4dbcd6599f8c06e1f68f02909"/>
+            </dir>
+            <dir name="mvc">
+              <dir name="application">
+                <file name="application.php" hash="8a783290386db3eb4e1b2d1b7cf33086"/>
+                <file name="type.php" hash="2cbb8b9ed642c7084552dde24d1787c2"/>
+              </dir>
+              <file name="base.php" hash="fab4b31150cb4edf44899c90ec71db11"/>
+              <file name="controller.php" hash="a7f226c901a494f4f0e772496e31404d"/>
+              <dir name="controllers">
+                <file name="backend.php" hash="167dcea60a8edf32b63a2484f8b6cac9"/>
+              </dir>
+              <file name="db.php" hash="b2e727adf24b6f64029aa28cd58a3d15"/>
+              <file name="layout.php" hash="fb425669b74d062b11b4e20ecb0d6cd8"/>
+              <file name="model.php" hash="884004e1c8ec2724e5373fd4af569b68"/>
+              <file name="view.php" hash="64e238493c2fdf632e04141323774a25"/>
+              <file name="viewBase.php" hash="3de95d7d7b85ee6dba629c7b27cd07e2"/>
+            </dir>
+            <dir name="oauth">
+              <file name="http.php" hash="5ada6d52c47aac0a68106add1e8de18d"/>
+              <file name="oauth.php" hash="ec05f4e128d7fd1e88c2e3473812a9be"/>
+              <file name="oauth_configuration.json" hash="533c82e2b4d43775448349d88bf6baeb"/>
+            </dir>
+            <dir name="parse">
+              <file name="font.php" hash="a55ec7338817ae4a2d9f1180e346c41e"/>
+              <file name="ini.php" hash="a83d6b888f37bb457bc05552332fd61a"/>
+              <file name="parse.php" hash="0e9eb980104ee6f8f96223ed15c165cb"/>
+              <file name="style.php" hash="1f07526753ac30c88bddbff775aeda16"/>
+            </dir>
+            <dir name="plugin">
+              <file name="plugin.php" hash="0a6689807f1b622f8e31442c7cdf6df4"/>
+            </dir>
+            <file name="request.php" hash="781fef2ac19f322caaccdedc10d02a1d"/>
+            <dir name="router">
+              <file name="router.php" hash="e1f7fe53c82df6689a7618f5eb145a48"/>
+            </dir>
+            <dir name="session">
+              <file name="session.php" hash="ed8721c4e34d4b7193e5c6993e3c845e"/>
+              <file name="storage.php" hash="c94b1d79549e19af8c723e612edd2ccb"/>
+            </dir>
+            <dir name="storage">
+              <file name="section.php" hash="6b11e62d345d618e2151392fcd73a62b"/>
+            </dir>
+            <dir name="stylemanager">
+              <file name="renderer.php" hash="b0afdfd810bc3268dfc12173c176f835"/>
+              <file name="storage.php" hash="8d8e7013783091a2cac3487d08561f63"/>
+              <dir name="stylemanager">
+                <file name="extra.xml" hash="1113cde75f920affe6c83e5348b37cd8"/>
+                <file name="form.xml" hash="fe590dba58fd8a8fbb53303f9c49a415"/>
+              </dir>
+              <file name="stylemanager.php" hash="39f972cbcadad7e0f12367ad64f05408"/>
+            </dir>
+            <dir name="uri">
+              <file name="uri.php" hash="b5b2b9bd2529a0571ea2fe63b5356259"/>
+            </dir>
+            <dir name="xml">
+              <file name="helper.php" hash="655e2b82774abb9fc5c6c02bb8dee951"/>
+            </dir>
+            <dir name="zip">
+              <file name="pclzip.php" hash="3ee0a4d8a06cedc0a56f29e8f351ef72"/>
+              <file name="read.php" hash="ef7200a1f485e3bf3fd4565774b2b218"/>
+              <file name="zip_lib.php" hash="59091ac625fe4b50ddc5c31746529beb"/>
+              <file name="zip_read.php" hash="0371767a714bd78522815ccf4a7c0651"/>
+            </dir>
+          </dir>
+          <file name="library.php" hash="d1732dc10d46473b65bef903b1337478"/>
+          <file name="loader.php" hash="38d23d8712a9996b9474e6fe86364e74"/>
+          <file name="nextend.php" hash="5a66b15a83c458360108dbdc4db2787c"/>
+          <file name="settings.php" hash="6db650918f74ea8a70e889d86d41c1ec"/>
+        </dir>
+        <dir name="magento">
+          <dir name="libraries">
+            <dir name="acl">
+              <file name="acl.php" hash="d8e15827f2d5ed8eccb1b1a1db48a969"/>
+            </dir>
+            <dir name="filesystem">
+              <file name="filesystem.php" hash="81ac9245e0619e9c5dee5bd71523b30c"/>
+            </dir>
+            <dir name="form">
+              <dir name="element">
+                <file name="url.php" hash="196f7fc2daa583e372dc9ce25ab1c2a1"/>
+              </dir>
+              <file name="form.php" hash="0cfdc230c0f43d6b8e36e06fd0722363"/>
+            </dir>
+            <dir name="image">
+              <file name="helper.php" hash="7231249343f7cd48e6af31274916638d"/>
+            </dir>
+            <dir name="localization">
+              <file name="localization.php" hash="8b7fb200509cbc2295bca74b950f2edd"/>
+            </dir>
+            <dir name="models">
+              <file name="link.php" hash="f2753f79c03e2e20b36fbb1a70aa5c42"/>
+            </dir>
+            <dir name="mvc">
+              <file name="db.php" hash="d92913ca08468ae547c3f02ea5bb712e"/>
+            </dir>
+            <dir name="router">
+              <file name="router.php" hash="3c768455006f757f3880fc732ba5e558"/>
+            </dir>
+            <dir name="session">
+              <file name="storage.php" hash="e491ed59790d83e3bae72db25246b9bf"/>
+            </dir>
+            <dir name="uri">
+              <file name="uri.php" hash="dd4351fef30727f70120c21d04acab28"/>
+            </dir>
+          </dir>
+          <file name="library.php" hash="9848a83e353762c2f17454ef0d0341b9"/>
+          <file name="libraryafter.php" hash="f84214fc43f665c79b92dc7a092b364f"/>
+          <file name="N2SystemApplicationInfoFilter.php" hash="0aee717ad8ea02c8d6e6f855ace321c7"/>
+          <file name="platform.php" hash="70d4aa03dd4f854d037f1c34565715b7"/>
+        </dir>
+        <dir name="Nextend2">
+          <dir name="controllers">
+            <dir name="Adminhtml">
+              <file name="Nextend2Controller.php" hash="d2318f5b63dd47e65f24f301c0ae804d"/>
+            </dir>
+          </dir>
+          <dir name="etc">
+            <file name="adminhtml.xml" hash="6e07fdb58d3703caf342153f75d4d68b"/>
+            <file name="config.xml" hash="1aec587618d17d9a97b2633255ad35ef"/>
+          </dir>
+          <dir name="Helper">
+            <file name="Data.php" hash="775b28858cb48275b98af496d0f4a4c1"/>
+          </dir>
+          <dir name="Model">
+            <file name="Observer.php" hash="1cebd83e7afeecd92088bee92023f417"/>
+            <dir name="Resource">
+              <file name="Setup.php" hash="a26bbd689918cb335d589a696088305b"/>
+            </dir>
+          </dir>
+          <dir name="sql">
+            <dir name="nextend2_setup">
+              <file name="mysql4-install-1.0.0.php" hash="e72096f3bda29d75c0ef0498ac6f5f11"/>
+            </dir>
+          </dir>
+        </dir>
+        <dir name="SmartSlider3">
+          <dir name="Block">
+            <file name="Slider.php" hash="9c1af12d2f2f6b0ece4aa97f89534832"/>
+          </dir>
+          <dir name="controllers">
+            <dir name="Adminhtml">
+              <file name="Smartslider3Controller.php" hash="97ab46604ff7b45d2da389dd86a4c342"/>
+            </dir>
+          </dir>
+          <dir name="etc">
+            <file name="adminhtml.xml" hash="3394f4b32ddf1a2f233e7612cb9a99d3"/>
+            <file name="config.xml" hash="37a748ee6c77a0ef978d29859e1d8fa4"/>
+            <file name="system.xml" hash="b1d8673a00625ca361a3aef0b138c8f1"/>
+            <file name="widget.xml" hash="43c4a58eed7bf0d3238cc6e0f2579181"/>
+          </dir>
+          <dir name="Helper">
+            <file name="Data.php" hash="97de5aeca352abe3cb31121f6a5861d7"/>
+          </dir>
+          <dir name="library">
+            <dir name="magento">
+              <dir name="backend">
+                <dir name="inline">
+                  <file name="publish.php" hash="e20de22cdbd2906b7a2572fa7099f06b"/>
+                </dir>
+              </dir>
+              <file name="init.php" hash="1a8def63a2401d94fbdb9a4fbe5ae17b"/>
+              <file name="install.php" hash="09ac987cdfa699efb49a0337c2eda5b3"/>
+              <dir name="libraries">
+                <dir name="slider">
+                  <file name="slider.php" hash="784d77dd1b724793eebe876e1315e9a3"/>
+                </dir>
+              </dir>
+              <file name="N2SmartsliderApplicationInfoFilter.php" hash="914e9ae9ef6e1cdb22c57dad4c2cbbff"/>
+              <dir name="plugins">
+                <dir name="generator">
+                  <file name="loadplugin.php" hash="91e4f691e813e8b027cc0cafc6b6f477"/>
+                  <dir name="magento">
+                    <file name="magento.php" hash="e9a79993f5b005a19f0c64c4d3925092"/>
+                    <dir name="product">
+                      <file name="config.xml" hash="723e1a9514cf2132e75fd9b6dc232ae9"/>
+                      <dir name="element">
+                        <file name="magentoattributesets.php" hash="4e3f3c0ed5248ea6c9081e34451dfdf2"/>
+                        <file name="magentocategories.php" hash="f8e70c7ce9373a4c92098f494064c943"/>
+                        <file name="magentoproducttypes.php" hash="7c25ad6bb7c0b05c4bce6e55242d78f6"/>
+                      </dir>
+                      <file name="generator.php" hash="227f81a352f0f45b1388d8e6991c0888"/>
+                    </dir>
+                  </dir>
+                </dir>
+                <file name="loadplugin.php" hash="69a91fd41dfcebe50bcb9d615903436f"/>
+              </dir>
+            </dir>
+            <dir name="smartslider">
+              <dir name="backend">
+                <dir name="controllers">
+                  <dir name="ajax">
+                    <file name="Backgroundanimation.php" hash="dd01cc59fa25a18eb6634b461f2ca1e9"/>
+                    <file name="Generator.php" hash="5a7304f2a1a7ceed89cfdcbf57a1fde0"/>
+                    <file name="Guide.php" hash="883fc45dfbfd7a817b08c01898a6cf93"/>
+                    <file name="Layout.php" hash="f1790e12b4882306df922af5a0c15178"/>
+                    <file name="Settings.php" hash="2c0b6eb1d1b56cf484c580f9fd09ec4c"/>
+                    <file name="Slider.php" hash="66403049add48ff7a73445c343484a16"/>
+                    <file name="Slides.php" hash="7c5e10b527a8353342d9354764fd49d6"/>
+                  </dir>
+                  <file name="Backgroundanimation.php" hash="7e2d67ee5df5c06d7c9c0a72b4fae636"/>
+                  <file name="Generator.php" hash="e2106631f3d1594acfa989b5db3f3575"/>
+                  <file name="Install.php" hash="1e43dc0170e4b871772c7f33e7de4cf2"/>
+                  <file name="Layout.php" hash="32a210b4ba4202f6409eceeaf41855c4"/>
+                  <file name="Preview.php" hash="33b0a1a2dddc6c89e9318bcafa562d45"/>
+                  <file name="Settings.php" hash="2c50aa4a6aa044f842614e5dcc8392df"/>
+                  <file name="Slider.php" hash="65a331584d06c7e2efe933955cea6185"/>
+                  <file name="Sliders.php" hash="71b03f05b0a4cc62a66d9d9a99d67b4f"/>
+                  <file name="Slides.php" hash="96ad661d4d6423db2feba2b5bb99de13"/>
+                  <file name="Update.php" hash="7b0c0f031df8fc3df00cb2770e9fd462"/>
+                </dir>
+                <dir name="helpers">
+                  <dir name="controller">
+                    <file name="N2SmartSliderController.php" hash="7cb1ade52d3dcd01d5ae5287d5dce2df"/>
+                  </dir>
+                </dir>
+                <dir name="inline">
+                  <file name="font.php" hash="b445a8a794f39aaaf5fb066b9f632f1a"/>
+                  <dir name="sidebar">
+                    <file name="backgroundanimation.php" hash="d003ce740cc4faa1c516bbca450b81f5"/>
+                    <file name="layout.php" hash="f1a080a3e36abfe9f1eddd132160df9b"/>
+                  </dir>
+                  <file name="slidemanager.php" hash="c02484eeadefa5f71a9cd8f0881e091e"/>
+                  <file name="_sidebar_settings.php" hash="16f01aee2e001f5927b74bb446777043"/>
+                  <file name="_sidebar_slide.php" hash="63a2e69feffd1486c293e0422879cc4d"/>
+                  <file name="_sliders.php" hash="0ef23187dfcb3dc13834c13bb0b9b6c6"/>
+                </dir>
+                <dir name="layouts">
+                  <file name="default.php" hash="1118642ab2832d0ad797ce130e0da65b"/>
+                  <file name="full.php" hash="cb48ecad3ed28820c808bc14b786a7b1"/>
+                  <file name="lightbox.php" hash="20b3580ad84e17455f2a9f2fafa89c4f"/>
+                  <file name="preview.php" hash="63f66b67949a3b1d7b85beba82b0f016"/>
+                  <file name="sidebar.php" hash="694c8cf8be01d7b90d227723cad52efc"/>
+                </dir>
+                <file name="N2SmartsliderApplicationTypeBackend.php" hash="4f22335a7012e87259481c2871218490"/>
+                <dir name="views">
+                  <dir name="backgroundanimation">
+                    <file name="index.php" hash="59be31cd5464cb9a7eb729c25208ae37"/>
+                    <file name="topbar.php" hash="ace1301f3a8b18f8af0b5bc5771d51ff"/>
+                  </dir>
+                  <dir name="defaults">
+                    <file name="noaccess.php" hash="edea1125dca251b1113c7b248bfa0ff1"/>
+                  </dir>
+                  <dir name="generator">
+                    <file name="check_configuration.php" hash="0d1eb185de3c37fa2a8eb91f6053b7c3"/>
+                    <file name="create.php" hash="4356c60a4064585004896dbaffda51be"/>
+                    <file name="create_settings.php" hash="c03c5577cc9dab6a8f7d7eff89e6c845"/>
+                    <file name="edit.php" hash="f524ecb193c1279d665d14aca24930f0"/>
+                    <file name="_view.php" hash="b09f1ec378d862039c99d6fa3c4372bf"/>
+                  </dir>
+                  <dir name="layout">
+                    <file name="index.php" hash="c52cf904665354c0093ee6ffa24f7fbd"/>
+                    <file name="topbar.php" hash="c52cf904665354c0093ee6ffa24f7fbd"/>
+                  </dir>
+                  <dir name="preview">
+                    <file name="generator.php" hash="ad98b1d0983d9dade47c9aabc33a3cc7"/>
+                    <file name="index.php" hash="87fee279ef6308f8b4b2e898899bb95f"/>
+                    <file name="slide.php" hash="141235f59e7097b0609fd52421f43d5b"/>
+                    <file name="_preview.php" hash="32d50825aa41491cbabf9b12257e2506"/>
+                    <file name="_view.php" hash="cf1125b913da58e2d7e96486f0a36a9e"/>
+                  </dir>
+                  <dir name="settings">
+                    <file name="cache.php" hash="c82670eaf3565f1632ded2fda004be45"/>
+                    <file name="default.php" hash="08f9802499fee56fbe22bc4d897a63b1"/>
+                    <file name="defaults.php" hash="21590cfe6efc8c6155e216211dbbd662"/>
+                    <file name="_view.php" hash="9bbe4e18826aa586c39bb6753b181cac"/>
+                  </dir>
+                  <dir name="slider">
+                    <file name="cachedslider.php" hash="5fa882108a2af3bc0550d8f0e6cdd6fa"/>
+                    <file name="edit.php" hash="0d5abb786fe73f18895075c81189e203"/>
+                    <file name="_slider_edit.php" hash="43f67caf292684dfc2bd798a896a9fff"/>
+                    <file name="_view.php" hash="4e7a3f716068deb304a763bac275a7b6"/>
+                  </dir>
+                  <dir name="sliders">
+                    <file name="importByUpload.php" hash="fa48e44491cd691f2510032f1e8c3bb0"/>
+                    <file name="importFromServer.php" hash="0fa0c4cfb60e161a2292433d02b689a8"/>
+                    <file name="index.php" hash="e8a1936728b65bc0033bdd8f5ff9a96a"/>
+                    <file name="_view.php" hash="e81b9985faff00730a9b47f957c8cac5"/>
+                  </dir>
+                  <dir name="slides">
+                    <file name="edit.php" hash="1f4857ea4ede7a22b007c23d96b970f4"/>
+                    <file name="slidebox.php" hash="ca765e445e3c6e1fc422b4eae9d9f498"/>
+                    <file name="_view.php" hash="6e6f4e25ea258543a9331c8c704ddfc1"/>
+                  </dir>
+                </dir>
+              </dir>
+              <dir name="form">
+                <dir name="element">
+                  <file name="backgroundanimation.php" hash="f3bc99b8cccce49820df8b7889a1157f"/>
+                  <file name="sliderwidgetarea.php" hash="4ec74738a422ed6e91c7dfc471d406d9"/>
+                  <file name="widgetpluginmatrix.php" hash="89825c3a45e90a469f86985a7a75f98f"/>
+                  <file name="widgetposition.php" hash="fe30f921d7558135bf551717582485ea"/>
+                </dir>
+              </dir>
+              <dir name="languages">
+                <file name="hu_HU.mo" hash="421c7ace89ac1999d29600743d457282"/>
+              </dir>
+              <dir name="libraries">
+                <dir name="backgroundanimation">
+                  <file name="manager.php" hash="8119398f6b4cfb6d436eec0c16b1cccd"/>
+                  <file name="storage.php" hash="f2f2da5e7ab0dcbf5e92a8f75d0fbcbf"/>
+                </dir>
+                <file name="backup.php" hash="2e677ac283f7ea284de069d0f6c40aef"/>
+                <file name="export.php" hash="7794820df79d10a353b9a4a65f0a8083"/>
+                <file name="import.php" hash="ad090355055f7c5370d494c1d35316c6"/>
+                <dir name="layout">
+                  <file name="storage.php" hash="b5103dc36d2c5029183fceeb30bdc827"/>
+                </dir>
+                <file name="link.php" hash="2d9fe73798fe385bad7d3b5c3cef56f1"/>
+                <dir name="plugins">
+                  <file name="N2SliderGeneratorPluginAbstract.php" hash="73fdaef45748b3fc7d8752d645219380"/>
+                  <file name="N2SliderItemAbstract.php" hash="aede5e205de0547e06df77dcac676ea3"/>
+                  <file name="N2SliderWidgetAbstract.php" hash="5053a5400cbb0aef189c838a93a92e06"/>
+                </dir>
+                <dir name="settings">
+                  <file name="settings.php" hash="f742e7e8b89d357a1bbb175a239e635e"/>
+                </dir>
+                <dir name="slider">
+                  <file name="abstract.php" hash="2e82add81e4d3228be7ef1760ac75830"/>
+                  <file name="backend.php" hash="06f0987ccdc01390413a231f29d40f6b"/>
+                  <dir name="cache">
+                    <file name="generator.php" hash="0486a3e1224218186acbbc93c5744d05"/>
+                    <file name="slider.php" hash="28bca109d52e3054e90cda035d8f1419"/>
+                  </dir>
+                  <file name="css.php" hash="72e81d034f138a1250f65555c70567f3"/>
+                  <dir name="features">
+                    <file name="align.php" hash="a60dab01e71bef88d620baa0b8e56018"/>
+                    <file name="autoplay.php" hash="57b83d3a2b8363086dd32a5ad40da2d7"/>
+                    <file name="blockrightclick.php" hash="f04cd78da149ffc7e994acf6735e572b"/>
+                    <file name="controls.php" hash="e6df6a93dc6ade11f7afa2bc1155fb09"/>
+                    <file name="fadeonload.php" hash="cec5223c02641edcf7ac38601dc316a9"/>
+                    <file name="features.php" hash="a29abcb35886e2a4c9e5907746766902"/>
+                    <file name="layermode.php" hash="5c7218f147e09c37031815e6d9c13016"/>
+                    <file name="lazyload.php" hash="605e23140890122f8d1d3bba1d543def"/>
+                    <file name="maintainsession.php" hash="f7fa56a92d53352f590446c0d967263e"/>
+                    <file name="margin.php" hash="2fe4f8859cbeaf212ef8400d153d5565"/>
+                    <file name="responsive.php" hash="7b7ace6fcb8d98a4c7d9d2ed0d724b5a"/>
+                    <file name="slidebackground.php" hash="af61c867149226eecb5fae64820187ce"/>
+                    <file name="spinner.php" hash="098009fac8ae6cef7b3d8956c4a41ce6"/>
+                    <file name="translateUrl.php" hash="57b63f1bdba71d368fcda4e50a72eca5"/>
+                  </dir>
+                  <dir name="generator">
+                    <file name="abstract.php" hash="97ac7d7dc821aa37bbae152fc531225b"/>
+                  </dir>
+                  <file name="helper.php" hash="3c101f0774299cce8a403f2c4baad834"/>
+                  <file name="manager.php" hash="19d05196f7dfe5e86a24502840b36457"/>
+                  <dir name="slide">
+                    <file name="generator.php" hash="943dac470d8bba9d62a602c2fc96d09a"/>
+                    <file name="item.php" hash="0b9eab64e47d40393ecda0b5545df187"/>
+                    <file name="layer.php" hash="f356357926ac03b10ba645f56a00f630"/>
+                    <file name="slide.php" hash="eea1a0abc8de49ebd3e88f81a6075c8d"/>
+                    <file name="slides.php" hash="633b672970a1d842ea8ffe22394b9871"/>
+                    <file name="slidesadmin.php" hash="5d4fbb4e1b7b7de4b706ec0528a97c42"/>
+                  </dir>
+                  <file name="type.php" hash="fdb9fcda801e5dfad7fb62c6345a6466"/>
+                  <dir name="widget">
+                    <file name="widgets.php" hash="32d949016f6450324aa29c975df1d91c"/>
+                  </dir>
+                </dir>
+                <file name="storage.php" hash="c38744e70d1106ff4f8950dc57532a7e"/>
+              </dir>
+              <dir name="models">
+                <file name="Ajax.php" hash="67815bd90c3a47e90cbba8c95154ebf9"/>
+                <file name="backgroundanimation.php" hash="dbedfb9d01e958e887c73c5fa9e8bb55"/>
+                <dir name="forms">
+                  <dir name="backgroundanimation">
+                    <file name="sets.xml" hash="3c429c1748f8f49353f92efd7b29fb30"/>
+                  </dir>
+                  <dir name="element">
+                    <file name="halign.php" hash="9d071ab175e9ddc940f0041359eb8c08"/>
+                    <file name="items.php" hash="c63ca7f757605a8aba0dd4bfbb09103b"/>
+                    <file name="layerpicker.php" hash="d7a763b086268ece8aa7bf4cf9f441b7"/>
+                    <file name="sliderresponsive.php" hash="767d5fe48e2f189f3c72949185d2a837"/>
+                    <file name="slidertype.php" hash="4c80f9c34d5302ec6193885391ff404a"/>
+                    <file name="valign.php" hash="0015f24ebdd555c928554d3b574cc231"/>
+                  </dir>
+                  <file name="generator_edit.xml" hash="7315f6ad5234c87e0a607452ed4a043f"/>
+                  <dir name="import">
+                    <file name="server.xml" hash="31c2c932d7fe3b4c93d9d484665cc7f7"/>
+                    <file name="upload.xml" hash="c7f8bf90e2dac0195ce5361cdde79fd8"/>
+                  </dir>
+                  <file name="layer.xml" hash="e4156bf225acd62d0cebf60f55be5c24"/>
+                  <dir name="layout">
+                    <file name="sets.xml" hash="3c429c1748f8f49353f92efd7b29fb30"/>
+                  </dir>
+                  <file name="license.xml" hash="a2b137038a6890bdd15573ac6a0c6540"/>
+                  <file name="multigenerator.xml" hash="bac16cdd18364f19521e5ee29b6b2dcb"/>
+                  <dir name="settings">
+                    <file name="default.xml" hash="c5d59dd0ca0ed511cfd54d1b89aabce0"/>
+                    <file name="joomla.xml" hash="4703e81779058ed9a9c8e04c27a02aff"/>
+                  </dir>
+                  <file name="slide.xml" hash="74360e097e4a4d1a81527839ff74761c"/>
+                  <file name="slider.xml" hash="c516535126fc17966f8e304597d52ec8"/>
+                  <file name="slide_generator.xml" hash="182e11ac8315daccd776ad5e7ad8ec3a"/>
+                  <file name="translateurl.xml" hash="17170eb3dd6ff0f7a8fd59385891862d"/>
+                </dir>
+                <file name="generator.php" hash="35262ffc7f6095afbe0ca91fe8bd628c"/>
+                <file name="Install.php" hash="741cdc687993c1e0f5db2099160a53d6"/>
+                <file name="Item.php" hash="14a2bef4f55e45b80c3c98f14c6da079"/>
+                <file name="Layers.php" hash="3c89f818548c5195dc222e06394879a5"/>
+                <file name="License.php" hash="2eeabba3f01e2037361cbfc76232c42c"/>
+                <file name="Modules.php" hash="cc0a3060a388b17f844f3a945e78c984"/>
+                <file name="ModulesMenu.php" hash="73d73ec07e6587c1c2b82d450a940fed"/>
+                <file name="Settings.php" hash="014d736870053290d4cedf5c426b98e9"/>
+                <file name="Sliders.php" hash="67a5e4592e2325b8e9823a83c550836a"/>
+                <file name="Slides.php" hash="54ef0e37bc354cdecd35543d8e99931b"/>
+                <file name="Update.php" hash="9946a253b4a41087068fd83668912e94"/>
+              </dir>
+              <file name="N2SmartsliderApplication.php" hash="b8720905c1b3faea0dbdd9b92fd3efe9"/>
+              <file name="N2SmartsliderApplicationInfo.php" hash="b23e38ffc5207a83bb88ef132b14cb55"/>
+              <dir name="plugins">
+                <dir name="generator">
+                  <file name="loadplugin.php" hash="91e4f691e813e8b027cc0cafc6b6f477"/>
+                </dir>
+                <dir name="item">
+                  <dir name="button">
+                    <dir name="button">
+                      <file name="configuration.xml" hash="d2bd7d8c3f7d00bb3edf5bba76dc5fe3"/>
+                    </dir>
+                    <file name="button.php" hash="fa82262ceb92f1be17d4cc99623fd8af"/>
+                  </dir>
+                  <dir name="heading">
+                    <dir name="heading">
+                      <file name="configuration.xml" hash="0308a4bffc0c1370771333272c07db26"/>
+                    </dir>
+                    <file name="heading.php" hash="f55a3d5b7563e23b579a315bc3141b41"/>
+                  </dir>
+                  <dir name="image">
+                    <dir name="image">
+                      <file name="configuration.xml" hash="2700e471753f8a100476d906f0a6451b"/>
+                    </dir>
+                    <file name="image.php" hash="960a77e2b8fe405700de08a5e6b17a69"/>
+                  </dir>
+                  <file name="loadplugin.php" hash="91e4f691e813e8b027cc0cafc6b6f477"/>
+                  <dir name="text">
+                    <dir name="text">
+                      <file name="configuration.xml" hash="d31487bb025354888a68dd648db4e2ba"/>
+                    </dir>
+                    <file name="text.php" hash="44364df7bf45616dead59be924bed38c"/>
+                  </dir>
+                  <dir name="vimeo">
+                    <dir name="vimeo">
+                      <file name="configuration.xml" hash="af60c4320c0c3ac4e2c6df26cb755afa"/>
+                    </dir>
+                    <file name="vimeo.php" hash="e6d010e78b1a6b0670e038735ade9ec4"/>
+                  </dir>
+                  <dir name="youtube">
+                    <dir name="youtube">
+                      <file name="configuration.xml" hash="5ba5c14b686df907c1736433beb45670"/>
+                    </dir>
+                    <file name="youtube.php" hash="6fc72ebe850f5293b4f89fd24c041579"/>
+                  </dir>
+                </dir>
+                <file name="loadplugin.php" hash="b88b36aa588c5f9c773a623f10830333"/>
+                <dir name="responsive">
+                  <dir name="auto">
+                    <dir name="auto">
+                      <file name="responsive.xml" hash="f5e14eee90c216afcdbac823673dd570"/>
+                    </dir>
+                    <file name="auto.php" hash="45c6d6e722b799c5d46a1625546d39a7"/>
+                  </dir>
+                  <dir name="fullwidth">
+                    <dir name="fullwidth">
+                      <file name="responsive.xml" hash="903d0670790aafbb283b44b3b42cc2fc"/>
+                    </dir>
+                    <file name="fullwidth.php" hash="327d67bec9b730c355ece1428f748203"/>
+                  </dir>
+                  <file name="loadplugin.php" hash="91e4f691e813e8b027cc0cafc6b6f477"/>
+                </dir>
+                <dir name="type">
+                  <file name="loadplugin.php" hash="91e4f691e813e8b027cc0cafc6b6f477"/>
+                  <dir name="simple">
+                    <dir name="simple">
+                      <file name="backup.php" hash="bdf9b3f07f75f4aa4f06178ad7e91d48"/>
+                      <file name="css.php" hash="7d543a7dc35ca848cf3cf20212ee9c17"/>
+                      <file name="slide.xml" hash="16222ca36c9d36d70246d73cb4288520"/>
+                      <file name="slider.xml" hash="912c659d27a5108d15ae9a2f839336a3"/>
+                      <file name="type.php" hash="5061c0a35e915aeabcf0f22879791f25"/>
+                    </dir>
+                    <file name="simple.php" hash="b9045491675b7816b1152c7f4258bf37"/>
+                  </dir>
+                </dir>
+                <dir name="widget">
+                  <dir name="arrow">
+                    <dir name="arrow">
+                      <file name="config.xml" hash="c6ca1368d9e249d4df911fd9d8f3cf6a"/>
+                    </dir>
+                    <file name="arrow.php" hash="4ce282fe10e7dc002232f9a4315a8001"/>
+                  </dir>
+                  <dir name="autoplay">
+                    <dir name="autoplay">
+                      <file name="config.xml" hash="cb7f46d3449e89ab9b99bfe6b7dbd927"/>
+                    </dir>
+                    <file name="autoplay.php" hash="0072989c30eb25c4db7f080b0dcb51fd"/>
+                  </dir>
+                  <dir name="bar">
+                    <dir name="bar">
+                      <file name="config.xml" hash="53f7e38326092611aec34109b0a360fe"/>
+                    </dir>
+                    <file name="bar.php" hash="e85e412c0e05d2388c049cddb4916f0e"/>
+                  </dir>
+                  <dir name="bullet">
+                    <dir name="bullet">
+                      <file name="config.xml" hash="b8f8d35b88ccde38eb94e8611ea4a5b8"/>
+                    </dir>
+                    <file name="bullet.php" hash="274ae561b64c070454ef9190a70bcb25"/>
+                  </dir>
+                  <file name="loadplugin.php" hash="91e4f691e813e8b027cc0cafc6b6f477"/>
+                  <dir name="shadow">
+                    <dir name="shadow">
+                      <file name="config.xml" hash="b3cc9b50fd08b357bebb9b47ca1a6e02"/>
+                    </dir>
+                    <file name="shadow.php" hash="ad2b0ebf46946ba4eb40245eefe3dd04"/>
+                  </dir>
+                  <dir name="thumbnail">
+                    <dir name="thumbnail">
+                      <file name="config.xml" hash="439a9c391817f08903fffcd0d6441970"/>
+                    </dir>
+                    <file name="thumbnail.php" hash="c1eac5469e3c64ce8d86daa5285da1d1"/>
+                  </dir>
+                </dir>
+                <dir name="widgetarrow">
+                  <dir name="image">
+                    <dir name="image">
+                      <file name="config.xml" hash="55ca1ab3f8628f6a66d0d004b9340fe6"/>
+                    </dir>
+                    <file name="image.php" hash="1256dae84e0d632bbde404a25eb7affa"/>
+                  </dir>
+                  <file name="loadplugin.php" hash="91e4f691e813e8b027cc0cafc6b6f477"/>
+                </dir>
+                <dir name="widgetautoplay">
+                  <dir name="image">
+                    <dir name="image">
+                      <file name="config.xml" hash="dfc996fa2a5e842a32a81b747c7ed7fb"/>
+                    </dir>
+                    <file name="image.php" hash="ba14a3cf0dafae1558077590227d120c"/>
+                  </dir>
+                  <file name="loadplugin.php" hash="91e4f691e813e8b027cc0cafc6b6f477"/>
+                </dir>
+                <dir name="widgetbar">
+                  <dir name="horizontal">
+                    <dir name="horizontal">
+                      <file name="config.xml" hash="b074e5db9fadd610e895ea6f0140a10e"/>
+                    </dir>
+                    <file name="horizontal.php" hash="c36206e626eb21623a4bba6020568e59"/>
+                  </dir>
+                  <file name="loadplugin.php" hash="91e4f691e813e8b027cc0cafc6b6f477"/>
+                </dir>
+                <dir name="widgetbullet">
+                  <file name="loadplugin.php" hash="91e4f691e813e8b027cc0cafc6b6f477"/>
+                  <dir name="transition">
+                    <dir name="transition">
+                      <file name="config.xml" hash="bced6bf6c7722b932a7e7791820b5ac4"/>
+                    </dir>
+                    <file name="transition.php" hash="1a713530324204beb0956c8d7060c42c"/>
+                  </dir>
+                </dir>
+                <dir name="widgetshadow">
+                  <file name="loadplugin.php" hash="91e4f691e813e8b027cc0cafc6b6f477"/>
+                  <dir name="shadow">
+                    <dir name="shadow">
+                      <file name="config.xml" hash="dd127ede8d5146cb8c319654bc4940c5"/>
+                    </dir>
+                    <file name="shadow.php" hash="750ab5058dbfea86b1d368f4f4050fe7"/>
+                  </dir>
+                </dir>
+                <dir name="widgetthumbnail">
+                  <dir name="default">
+                    <dir name="default">
+                      <file name="config.xml" hash="a4b570f86c98f7133a5d8ddd2387dfa1"/>
+                    </dir>
+                    <file name="default.php" hash="7d8114228d3a234c7ffc31233d491d6c"/>
+                  </dir>
+                  <file name="loadplugin.php" hash="91e4f691e813e8b027cc0cafc6b6f477"/>
+                </dir>
+              </dir>
+              <file name="smartslider3.php" hash="63e5beeb842c0c6d016fa7a696051453"/>
+              <dir name="widget">
+                <dir name="controllers">
+                  <file name="Home.php" hash="be12da947475bbb456a5dc823c15f233"/>
+                </dir>
+                <dir name="layouts">
+                  <file name="default.php" hash="d7b0699194589539d08bc00dccd20b30"/>
+                </dir>
+                <file name="N2SmartsliderApplicationTypeWidget.php" hash="bbf225b10f6a8821fe84070f4a42bef1"/>
+                <dir name="views">
+                  <dir name="home">
+                    <file name="magento.php" hash="99ec6864090b90f52b655e0566a3bf73"/>
+                    <file name="native.php" hash="f84214fc43f665c79b92dc7a092b364f"/>
+                    <file name="wordpress.php" hash="f84214fc43f665c79b92dc7a092b364f"/>
+                  </dir>
+                </dir>
+              </dir>
+            </dir>
+          </dir>
+          <dir name="Model">
+            <file name="Observer.php" hash="798573850ab41b315e6a3852a44a587c"/>
+            <dir name="Resource">
+              <file name="Setup.php" hash="d5a23bb97ed440283b5afaa03c8c681c"/>
+            </dir>
+            <file name="Sliders.php" hash="82dcccd1e9a19b45a65b97019cfed4c4"/>
+          </dir>
+          <dir name="sql">
+            <dir name="smartslider3_setup">
+              <file name="mysql4-install-1.0.0.php" hash="1b978fd8c58f4a65977e55cf4fd49b72"/>
+            </dir>
+          </dir>
+        </dir>
+      </dir>
+    </target>
+    <target name="magedesign">
+      <dir name="adminhtml">
+        <dir name="default">
+          <dir name="default">
+            <dir name="layout">
+              <file name="nextend2.xml" hash="058de56bf647203ae5a8fd9a217e8a40"/>
+              <file name="smartslider3.xml" hash="d81036151cf9ccdbc8af89e0990a3448"/>
+            </dir>
+            <dir name="template">
+              <dir name="nextend2">
+                <file name="index.phtml" hash="a487cb55bf18fc003e273bc91b0c15ac"/>
+              </dir>
+              <dir name="smartslider3">
+                <file name="index.phtml" hash="3258da19e981abc98ae5e243e0fe91e8"/>
+              </dir>
+            </dir>
+          </dir>
+        </dir>
+      </dir>
+    </target>
+    <target name="magemedia">
+      <dir name="nextend2">
+        <dir name="media">
+          <dir name="admin">
+            <dir name="images">
+              <file name="logo.png" hash="20c68cc9491ff5f1b134e7f7f963284e"/>
+            </dir>
+            <dir name="js">
+              <file name="animation.js" hash="b8a8ae543ec22e2c44185a8eda3af207"/>
+              <file name="animationeditor.js" hash="667e497db5e509e7742471b02224a23c"/>
+              <file name="browse.js" hash="19843b34ab865ad8de325c3e3b1a48e0"/>
+              <file name="font.js" hash="776de4f059af24a6223a28e94ab6de15"/>
+              <file name="fonteditor.js" hash="2a69027251b48071c5f8b9671d3be10a"/>
+              <dir name="fontservices">
+                <file name="google.js" hash="7d2806054ac40f1071cbe0c0fcc52265"/>
+              </dir>
+              <file name="image.js" hash="a0e00f7c8fbfb73ec29d295c3e36be13"/>
+              <file name="imageeditor.js" hash="8065405202262fbbc2ef68452408130c"/>
+              <file name="modals.js" hash="9905414466b1a0e6fdf832bb8c7f8322"/>
+              <file name="sets.js" hash="1099dc88dbf99b8ce2b50e6963c42946"/>
+              <file name="style.js" hash="6f6667b1f8b4a919fa64f292947873ff"/>
+              <file name="styleeditor.js" hash="d3ba4df220ba601e90f179b2e935d1bc"/>
+              <file name="visual.js" hash="63070a97459f64e7ae3ab42a180ada28"/>
+              <file name="visualeditor.js" hash="ab955b85e80c1e8a98ed7fecc2aea54d"/>
+            </dir>
+          </dir>
+          <dir name="css">
+            <file name="admin.css" hash="3e6036492cb07cc7a4ebce0c88c5b561"/>
+            <file name="font.css" hash="c7312c186d3fb0fab08d6b9ff51323be"/>
+            <file name="form.css" hash="feabda8621c3dfce83113f413715525c"/>
+            <dir name="jquery">
+              <file name="datetimepicker.css" hash="58479bceda5a603196deba7d585d32a2"/>
+              <file name="ui.resizable.css" hash="e60577c4ff58477c44f0d2d07ef1cfda"/>
+            </dir>
+            <file name="litebox.css" hash="c7339ae17a00a28a5f639c72f8e6f9e8"/>
+            <file name="nextend-font.css" hash="9ce4f5db106ddf9f7886dd42e89eae59"/>
+            <file name="notificationcenter.css" hash="7446895656f15a5e989c3de67314a866"/>
+            <file name="spectrum.css" hash="01ec36bf518fab77fe0e5a291fee6820"/>
+            <dir name="tabs">
+              <file name="tabbed.css" hash="5c18afc49a37c07a80a61d3881eb7850"/>
+            </dir>
+          </dir>
+          <dir name="fonts">
+            <file name="Nextend.eot" hash="9f4107e9e72ba7f92a4c23c7229d66a7"/>
+            <file name="Nextend.svg" hash="0294d0f96c86a4e129b8200fd56675d3"/>
+            <file name="Nextend.ttf" hash="f3c0a14b310fc21b140701e59dad1782"/>
+            <file name="Nextend.woff" hash="84cfbf5219acc49e6e58e190528d77c5"/>
+          </dir>
+          <dir name="images">
+            <dir name="element">
+              <file name="link_actions.png" hash="742f48a31b7c34dfb79e462d16ed9cf6"/>
+              <file name="link_lightbox.png" hash="44a580e7c19c9188743b624077b4cbf3"/>
+              <file name="link_platform.png" hash="d99ea97d2104029c81eb90febae1fea7"/>
+            </dir>
+            <file name="litebox-next.png" hash="7e9ba4386cfc34b597f620605ef9e503"/>
+            <file name="litebox-prev.png" hash="560027205db76382627248fda2d53368"/>
+            <dir name="placeholder">
+              <file name="image.png" hash="7299a4f1f80ab0328e57f61a4333b820"/>
+              <file name="image.svg" hash="6f0d061af412bc3abff6aafa83c72228"/>
+              <file name="imageback.png" hash="4e430a2d3b86a95bd8336cdf9c4bb6b7"/>
+              <file name="imageback.svg" hash="528293a2545025e3df9fad5ec9a12c8e"/>
+              <file name="imagefront.png" hash="bbdfce84aaacafeb542883f324b02b79"/>
+              <file name="imagefront.svg" hash="bca34da39cc90595420d5232990a46c9"/>
+              <file name="video.png" hash="ec8ea82e4e72f934be31476931648301"/>
+              <file name="video.svg" hash="58fd8971cdc11482de7c29b901c5a211"/>
+            </dir>
+          </dir>
+          <dir name="js">
+            <file name="admin.js" hash="1ff27e88e77df40a648ecddec97afb5e"/>
+            <file name="base64.js" hash="99ddce3e4ebe24e5a6f92c80173e1a78"/>
+            <file name="class.js" hash="6a796d3e8f58c7c69e343c7a04cf2260"/>
+            <file name="color.js" hash="1a1ba2fb2fa253ed4b510bf4e4d72f6e"/>
+            <file name="console.js" hash="8288179048a720a1c2e3c5b7cb361970"/>
+            <file name="consts.js" hash="454a9ad979e64842ff671f0607c09344"/>
+            <dir name="core">
+              <dir name="gsap">
+                <file name="gsap.js" hash="c4d79bd628a601335ea149f7df825396"/>
+                <file name="NextendTimeline.js" hash="bf906d6c930451f48e50b6b1834a9c65"/>
+              </dir>
+              <dir name="jquery">
+                <file name="fixto.js" hash="46ac5544a2371c0e56dcc3858acef8f1"/>
+                <file name="jquery.datetimepicker.js" hash="d500be7e5414ff3f0df000f56896c8c6"/>
+                <file name="jquery.imagesloaded.js" hash="1721e0c78a5f4c77c5cf79d9f20e2991"/>
+                <file name="jQuery.min.js" hash="20f501a643c7a9c5bcca9b85b32ee5a2"/>
+                <file name="jquery.mousewheel.js" hash="7b44817d8f169efcac0cbc95200ce45a"/>
+                <file name="jquery.tinyscrollbar.min.js" hash="641afc15af7e4b08a056f662d67771c5"/>
+                <file name="jquery.touchSwipe.js" hash="2bd17b8bbdf39d385252e845ef0df50d"/>
+                <file name="jquery.unique-element-id.js" hash="39cf0b6b7b7d82463d717cc455595f23"/>
+                <file name="jquery.universalpointer.js" hash="fb903a992957dc40538d403352992acc"/>
+                <file name="jstorage.js" hash="54f9ff806c989ebb0908105f1811182d"/>
+                <file name="litebox.js" hash="1dc6c858577b974fad2716319f4fb7fd"/>
+                <file name="njQuery.js" hash="4c5db5ee03ff767f892fcb4b703ec21a"/>
+                <dir name="ui">
+                  <file name="jquery-ui.min.js" hash="bda5875883b00918e25076392d59b5fc"/>
+                  <file name="jquery-ui.nextend.js" hash="6e5948c4a747ce2a55f68bd50190bff2"/>
+                  <file name="jquery.fileupload.js" hash="3b170738ffaa58b490cadd751deadd97"/>
+                  <file name="jquery.iframe-transport.js" hash="0b0c270226ec6238cfec4370c84b7efc"/>
+                </dir>
+                <file name="vertical-pane.js" hash="ba5dc295a87188323d27e7f3cbe81f95"/>
+              </dir>
+              <dir name="modernizr">
+                <file name="modernizr.js" hash="077f2b07e10f5f4caa3242d431ba6377"/>
+              </dir>
+            </dir>
+            <file name="css.js" hash="40366d3a04a530c2aba134ec4a0d3420"/>
+            <dir name="element">
+              <file name="autocomplete.js" hash="1052593392997f65a438274bd0888fc6"/>
+              <file name="checkbox.js" hash="89ac9dd29e6ad9a8bf23d29d8974f55b"/>
+              <file name="color.js" hash="4fa23da52bbeaaa774a10e638d24473f"/>
+              <file name="enabled.js" hash="01a8f2f1b467ccf5be26fb5e1f3ca48d"/>
+              <file name="folders.js" hash="261d5d8f7d0780bca6e20ffb16d0c8a7"/>
+              <file name="font.js" hash="367461e051e874efe8ab11c5162d50c5"/>
+              <file name="iconmanager.js" hash="c485e2d30a88e56ad9334dad92714b71"/>
+              <file name="image.js" hash="2bf977ebb532f04818a045361048937b"/>
+              <file name="imagemanager.js" hash="b70e27e4dcb297260ec8520346699395"/>
+              <file name="list.js" hash="080afe2028cedb32bb5b9323fe4ed1f4"/>
+              <file name="mirror.js" hash="ea91ec6ac67d3ce29a42e7b099ec2925"/>
+              <file name="mixed.js" hash="0ca9b739d752291e851e374c634b507f"/>
+              <file name="number.js" hash="a6166dc114f6558759f8e398c647940b"/>
+              <file name="onoff.js" hash="853b40fea8b7d8cdf58bcaec5e70df10"/>
+              <file name="radio.js" hash="4ff7703939d871e6dc7b1af045f94919"/>
+              <file name="richtext.js" hash="e550c25811cb32e824570035b63afe94"/>
+              <file name="skin.js" hash="a971931465ca3b586f43ee3b0fb8dd88"/>
+              <file name="style.js" hash="91533e225af0bb774219cfb52fcb64ba"/>
+              <file name="subform.js" hash="30379d3b51b008f3e631b310ded8dc88"/>
+              <file name="subformimage.js" hash="a0aee65fff1c1416df57eb6d1f22e935"/>
+              <file name="switcher.js" hash="0d57fda43526b9b5a262f2b240e8fc12"/>
+              <file name="text.js" hash="90d5c13aee84ac86511784ae6b080fa0"/>
+              <file name="url.js" hash="43b4f9b89a916616d3819cfcf8fc5715"/>
+            </dir>
+            <file name="element.js" hash="aacc62c30605cf1896ed22e85aa3cf0c"/>
+            <file name="expert.js" hash="51ecd225d2648bd09561ba9b2213397b"/>
+            <file name="form.js" hash="3f9936e5e73a2d31d3171c0d187dca2d"/>
+            <file name="imagehelper.js" hash="08a50de92aa86b936701c9606d89d963"/>
+            <file name="json2.js" hash="1127c880974e1c3d5ab65dff3a14b9b7"/>
+            <file name="md5.js" hash="f7816e37c49f45eeb4548d66890ff401"/>
+            <file name="mobile-detect.js" hash="a65032f07fd6ffff6198c53916385b53"/>
+            <file name="modal.js" hash="d5d7272631211e94c1239f1d5d4a94d2"/>
+            <file name="notificationcenter.js" hash="d835254880b8f57cca54d7767c27cd26"/>
+            <file name="query-string.js" hash="234e77bfd2dde982af75631616c812f3"/>
+            <file name="spectrum.js" hash="8da1b6be8e5203ccc4cd315fda556a2c"/>
+            <file name="webfontloader.js" hash="fb1d62ba832d7a66154a45ddf35f22e1"/>
+          </dir>
+          <dir name="less">
+            <file name="elements.less" hash="955b9397b9b5031401e7ba100ebeb3d1"/>
+          </dir>
+          <file name="normalize.css" hash="23c6647e5a067e716952a300d2ad8241"/>
+        </dir>
+      </dir>
+      <dir name="smartslider3">
+        <dir name="magento">
+          <dir name="plugins">
+            <dir name="generator">
+              <dir name="magento">
+                <file name="dynamic.png" hash="9b4302236d1246d388e4c964d27203db"/>
+              </dir>
+            </dir>
+          </dir>
+        </dir>
+        <dir name="media">
+          <dir name="admin">
+            <dir name="css">
+              <file name="smartslider.css" hash="626a3d412d7f587a0d5309150abfaaa8"/>
+            </dir>
+            <dir name="images">
+              <file name="add-demo.png" hash="40194060a8dddce611d683f6b07f9511"/>
+              <file name="AddLicense.png" hash="c5c22fd24fe939796206521e3d15ec32"/>
+              <file name="create-slider.png" hash="05c088c017779e3ea14b9d088f28b834"/>
+              <file name="Deauthorize.png" hash="d44e7b96e01fd6f094cd29255b9a9a54"/>
+              <file name="Documentation.png" hash="6e93004967447ea67064710747a3831b"/>
+              <file name="dummyslide.png" hash="a14ba0f701cc1404718282247b25667f"/>
+              <file name="Facebook.png" hash="1fbe5e0e194e9e00cb5889d49d456747"/>
+              <dir name="free">
+                <file name="box.png" hash="744c6041a09893f9489dba8203e803a4"/>
+                <file name="box2.png" hash="87ab2b77e8d74f3767f69ec3229eea99"/>
+                <file name="getpro1.jpg" hash="2d7b90aa883420f4402f66d2dbfde5d4"/>
+                <file name="getpro2.jpg" hash="565ef56fe404c6efd5f596e0eff37be5"/>
+                <file name="rate.png" hash="5bdebf368fe7ef08e91cd952650e9de4"/>
+              </dir>
+              <file name="Help.png" hash="32ef5cbeeaeb6b7c20edfb9e24bef603"/>
+              <file name="import-server.png" hash="40194060a8dddce611d683f6b07f9511"/>
+              <file name="import-upload.png" hash="7db45d50c6e29b9e165ca7630524f0fd"/>
+              <file name="logo.png" hash="65bd475bfd891920363d13e2aae1594e"/>
+              <file name="Love.png" hash="684f607b86ab9025140e845f3a1a689f"/>
+              <file name="magento-publish.png" hash="20e92a5e3b6ccb2658872596385069be"/>
+              <file name="Newsletter.png" hash="a3d54df727947e345afc27b2d56bacd6"/>
+              <dir name="sliderpresets">
+                <file name="block.png" hash="c45c8b281cd66f24310495993d1a4c7d"/>
+                <file name="caption.png" hash="98c744b6746dc6df2ddde573f7a8b20d"/>
+                <file name="carousel.png" hash="1aa70b5075186251d664e76bba391445"/>
+                <file name="default.png" hash="07e2ff299eea06f43d276b6231d177d2"/>
+                <file name="fullpage.png" hash="40fdc00faff25a6571ef8f4c2ed5d1f2"/>
+                <file name="fullwidth.png" hash="0475fee0bfc9e84c4cf66bb8637a15d6"/>
+                <file name="horizontalaccordion.png" hash="195d70048bd70c39abdc48cf4ca70a30"/>
+                <file name="showcase.png" hash="5cc5830e463f8e36ee005e4e5ff5b9e7"/>
+                <file name="thumbnailhorizontal.png" hash="fb6ce7f5c7ad4204b83917f52c69ac3c"/>
+                <file name="thumbnailvertical.png" hash="ac8dd6e1afda2f9d4c144f4966743bec"/>
+                <file name="verticalaccordion.png" hash="878787769c046f2ff444a8652c0b513a"/>
+              </dir>
+              <file name="Update.png" hash="b53da4074a9d4ba49bc4379972e3a3b4"/>
+              <file name="Videos.png" hash="ab9e34c1627ed8ed2cf9b02d304bfaf5"/>
+              <file name="wordpress-publish.png" hash="85d1bb649f3df36b8da0a11a05ecb376"/>
+            </dir>
+            <dir name="js">
+              <file name="admin.js" hash="a42323c9cbe32785768306ee7a67dc32"/>
+              <file name="backgroundanimation.js" hash="61eccaa94d5a505557396de126c20176"/>
+              <file name="backgroundanimationeditor.js" hash="da0d314c2876ae3977b15f65f5a4bc7f"/>
+              <file name="createslider.js" hash="25c1fc76d2bf75c79f5e25c6f7371aaf"/>
+              <dir name="element">
+                <file name="animationmanagerelement.js" hash="0223d416a5e3234bd3ab1d02411bfe50"/>
+                <file name="layerpicker.js" hash="738c4c2716409996d7dddc3ae373df89"/>
+                <file name="slidertype.js" hash="520273d5f214d2d73ee3dc68152dbe0f"/>
+                <file name="sliderwidgetarea.js" hash="4877aa1deda367d501b08b890f56e0ef"/>
+                <file name="widgetposition.js" hash="f2aea87be63770ee530d4af8307228b7"/>
+              </dir>
+              <dir name="free">
+                <file name="gopro.js" hash="38a8d2f6c77450beb768e048b09c6e3c"/>
+              </dir>
+              <dir name="generator">
+                <file name="generator.js" hash="c1a826936743b3417da83327e51e20d8"/>
+                <file name="records.js" hash="205d909b1b11e6ade3126c0d05b03bc9"/>
+              </dir>
+              <file name="helper.js" hash="ab1804155672714714e0e5306821df23"/>
+              <file name="inlinefield.js" hash="40dcab4db1840badba33e1e6c046e6ee"/>
+              <dir name="item">
+                <file name="item.js" hash="dc80a7ae27583a0c7062159b11fefe30"/>
+                <file name="manager.js" hash="f56c1dd7f7fdaf51bb6ff21cc9fa9eb9"/>
+                <dir name="parser">
+                  <file name="button.js" hash="cd538426ee0dc71c25ec316e48edea76"/>
+                  <file name="heading.js" hash="15dcef751479acd3d8a499b96bc7108d"/>
+                  <file name="image.js" hash="073d88eedb8b997da98cec1d2a8da62e"/>
+                  <file name="joomlamodule.js" hash="d41d8cd98f00b204e9800998ecf8427e"/>
+                  <file name="text.js" hash="5fe655f679ea67bd8eb9e079395566fc"/>
+                  <file name="vimeo.js" hash="768bd8c1052adf776cfae96f1183a72a"/>
+                  <file name="youtube.js" hash="0033ee737a2e6082f0bbf6a269dc6ec2"/>
+                </dir>
+                <file name="parser.js" hash="84fa600d9d30c878820cfd9544287648"/>
+              </dir>
+              <dir name="layer">
+                <file name="animation.js" hash="6429f5947c569f88a92a3825cf2e293b"/>
+                <file name="animationmanager.js" hash="ea3ea06d35791d7f9489273354e19479"/>
+                <file name="animations.js" hash="1506ce0a79f3759f709ab65a8be29728"/>
+                <file name="layer.js" hash="7d8e7c8c52f575f4dd49e348915b8e4c"/>
+                <file name="manager.js" hash="6e9c354330be8e8a48317bfeb3fd69e4"/>
+              </dir>
+              <file name="layout.js" hash="81051bcc2cf1bedf378224b0a93e2877"/>
+              <file name="layouteditor.js" hash="81051bcc2cf1bedf378224b0a93e2877"/>
+              <file name="sidebar-slides.js" hash="b7f8d506dbaa95a10f511a8c0ebeec63"/>
+              <file name="sidebar.js" hash="2e3d68fdc7cc77c3dac7eb7e581428ff"/>
+              <file name="slide.js" hash="dbc90ae766f0b01a687f1f58f53909bf"/>
+              <file name="zoom.js" hash="47e2a2fb7db038c42dcb93a5dc5570db"/>
+            </dir>
+          </dir>
+          <dir name="cursor">
+            <file name="closedhand.cur" hash="c4f6a79cca51dc920608300ce9fd6c6e"/>
+            <file name="openhand.cur" hash="5265966202e48544aebc049bfd57a0d8"/>
+          </dir>
+          <dir name="js">
+            <dir name="animation">
+              <file name="BackgroundAnimationAbstract.js" hash="1efa8ab650d879147a182bdf9c44f14c"/>
+              <file name="Flux.js" hash="94c76fc053c8125fc648e78383d53a13"/>
+              <file name="MainAnimationAbstract.js" hash="0266edac0ed21c3f005f55639fa2b68e"/>
+            </dir>
+            <file name="BackgroundImages.js" hash="8b4e7f06773dd5a8b244cc1131e5364b"/>
+            <dir name="controls">
+              <file name="Autoplay.js" hash="042d73164352834de4c6b6c9e3b3863a"/>
+              <file name="Keyboard.js" hash="ba3dff4666af35564dfaf1d2354d4a18"/>
+              <file name="Scroll.js" hash="dbf57075bb671b4bf1d8f5008927f357"/>
+              <file name="Tilt.js" hash="aa5ab5de5c614843a9862d21f88ea864"/>
+              <file name="Touch.js" hash="0257b39b5e3e6fd027f3d50517c53277"/>
+            </dir>
+            <dir name="item">
+              <file name="vimeo.js" hash="4416e27616e2dd79570cb180902616c1"/>
+              <file name="youtube.js" hash="da9ea308f7fe9c066b72979b86f4be0b"/>
+            </dir>
+            <dir name="layers">
+              <file name="Layers.js" hash="65c2637d7f4ff827a9fd3d8591eb6075"/>
+            </dir>
+            <file name="Load.js" hash="4ae3a4032da0149cec7428a31261ab7a"/>
+            <dir name="responsive">
+              <file name="Responsive.js" hash="f71e256f5e0b41c02694c60a8b123ba0"/>
+              <file name="ResponsiveElement.js" hash="3e30e645091e9399731ee509ec3c81d3"/>
+            </dir>
+            <file name="Slider.js" hash="9ff7f4a7149f48fd0309e16a20544c5d"/>
+            <file name="SliderAbstract.js" hash="93ea8d52d5041eeb165c57a84ea6d047"/>
+            <file name="Widgets.js" hash="3a7df85005fa371cbd61c9088c8b3f84"/>
+          </dir>
+          <dir name="less">
+            <file name="backgroundanimation.less" hash="5388abd93e92a12be56bff190e9e4d9f"/>
+            <file name="clear.less" hash="87b76f4245e458313ef5e4bef82fad6b"/>
+            <file name="slide.less" hash="8c4b73fb37cb4d040ccade6389887837"/>
+            <file name="spinner.less" hash="8bca09a79cb7ac871775e780e94b8032"/>
+          </dir>
+          <dir name="plugins">
+            <dir name="responsive">
+              <dir name="auto">
+                <dir name="auto">
+                  <file name="subformimage.png" hash="23e96c9dff6184b11f98e47a6d8a3c5c"/>
+                </dir>
+              </dir>
+              <dir name="fullwidth">
+                <dir name="fullwidth">
+                  <file name="subformimage.png" hash="1313f189cdf62bbec4c86553e975e868"/>
+                </dir>
+              </dir>
+            </dir>
+            <dir name="type">
+              <dir name="simple">
+                <dir name="simple">
+                  <dir name="gsap">
+                    <file name="BackgroundAnimation.js" hash="c1640d93e8ca26c3418e91bc22e7c574"/>
+                    <file name="MainAnimationSimple.js" hash="a53347e39c634fb6f4b248fd31a4074b"/>
+                    <file name="ResponsiveSimple.js" hash="42736f836e0b4df5be154664cde23767"/>
+                    <file name="TypeSimple.js" hash="c16d03c898162029ab017980b8d3f917"/>
+                  </dir>
+                  <file name="style.less" hash="fc00f150a7027c2fa12090e2365ca89d"/>
+                  <file name="subformimage.png" hash="1313f189cdf62bbec4c86553e975e868"/>
+                </dir>
+              </dir>
+            </dir>
+            <dir name="widget">
+              <dir name="arrow">
+                <dir name="arrow">
+                  <file name="disabled.png" hash="d39ddd318a59176c7d0c69e1fd7c4409"/>
+                </dir>
+              </dir>
+              <dir name="autoplay">
+                <dir name="autoplay">
+                  <file name="disabled.png" hash="d39ddd318a59176c7d0c69e1fd7c4409"/>
+                </dir>
+              </dir>
+              <dir name="bar">
+                <dir name="bar">
+                  <file name="disabled.png" hash="d39ddd318a59176c7d0c69e1fd7c4409"/>
+                </dir>
+              </dir>
+              <dir name="bullet">
+                <dir name="bullet">
+                  <file name="disabled.png" hash="d39ddd318a59176c7d0c69e1fd7c4409"/>
+                </dir>
+              </dir>
+              <dir name="shadow">
+                <dir name="shadow">
+                  <file name="disabled.png" hash="d39ddd318a59176c7d0c69e1fd7c4409"/>
+                </dir>
+              </dir>
+              <dir name="thumbnail">
+                <dir name="thumbnail">
+                  <file name="disabled.png" hash="d39ddd318a59176c7d0c69e1fd7c4409"/>
+                </dir>
+              </dir>
+            </dir>
+            <dir name="widgetarrow">
+              <dir name="image">
+                <dir name="image">
+                  <file name="arrow.js" hash="818b0df977a39dc6cedb97ef65688974"/>
+                  <file name="image.png" hash="bc2c833327a9fa86d6d75fa475bd0853"/>
+                  <file name="imageBigRectangle.png" hash="eed4f5857be4d924ef642d2ecf259d38"/>
+                  <file name="imageEmpty.png" hash="8f2a0e2e132a2ca83ec6aa33ea539e90"/>
+                  <file name="imageSmallRectangle.png" hash="7cb1f851d25ef9de89070185b264eff6"/>
+                  <file name="imageVertical.png" hash="89aa0464fbb50809859332edc8fdb76f"/>
+                  <dir name="next">
+                    <file name="circle-stroke.svg" hash="5039635d718536f81a6cd340690d9aef"/>
+                    <file name="full.svg" hash="32f55b3b5df0b23a0bd08ebe3d689b23"/>
+                    <file name="normal.svg" hash="ad493575ec05ccdd3100cba50b6de5d9"/>
+                    <file name="simple-horizontal.svg" hash="42175ec26326baf8cb900bde13f2cd46"/>
+                    <file name="simple-vertical.svg" hash="f6f681a660accbfdd132fca1fe9ca815"/>
+                    <file name="thin-horizontal.svg" hash="00ca1acae27e8486d128ef7242399c4b"/>
+                    <file name="thin-vertical.svg" hash="16012266b61ca703d15cc346c25bf933"/>
+                  </dir>
+                  <dir name="previous">
+                    <file name="circle-stroke.svg" hash="ad4677529052498985e3ea1c19e81730"/>
+                    <file name="full.svg" hash="4788169288460e28b3a884ecbed033da"/>
+                    <file name="normal.svg" hash="5681a479583a963ca7378d58daab3a0e"/>
+                    <file name="simple-horizontal.svg" hash="c9186827869d8b7a82535eeb853797f2"/>
+                    <file name="simple-vertical.svg" hash="b52f08594faab356b3c38dbfabee41b3"/>
+                    <file name="thin-horizontal.svg" hash="410ca3073a1455cc4879f3c95335dd9b"/>
+                    <file name="thin-vertical.svg" hash="b8ca0699142cac51a203c793cd59b6b2"/>
+                  </dir>
+                  <file name="style.less" hash="1b37aff9875fa46acf9c86ad7a9ff782"/>
+                </dir>
+              </dir>
+            </dir>
+            <dir name="widgetautoplay">
+              <dir name="image">
+                <dir name="image">
+                  <file name="autoplay.js" hash="b9b869db05dd0eb965fa59189aab76e2"/>
+                  <file name="image.png" hash="6a8456e8f4644be4e81515d95d1d33c4"/>
+                  <file name="imageBlue.png" hash="0128953f578cd69b4c601d7b3fec2b90"/>
+                  <dir name="pause">
+                    <file name="small-dark.svg" hash="82d38384668d9981b4b907974765662b"/>
+                    <file name="small-light.svg" hash="ffd1c0f6f3300478b75a7f7b59f39627"/>
+                  </dir>
+                  <dir name="play">
+                    <file name="small-dark.svg" hash="0fecfdb0ff1bae6437a4e871f2d2a177"/>
+                    <file name="small-light.svg" hash="b51761affeab4785a51357ba52951fd0"/>
+                  </dir>
+                  <file name="style.css" hash="34e83a2fb0709b715e6601eeddfcc1be"/>
+                </dir>
+              </dir>
+            </dir>
+            <dir name="widgetbar">
+              <dir name="horizontal">
+                <dir name="horizontal">
+                  <file name="bar.js" hash="c374a020682b6c18aa79dad1a979fbab"/>
+                  <file name="horizontal.png" hash="160037bbec5622763a67e1d8c01965ad"/>
+                  <file name="horizontalFull.png" hash="a3d9e531003e4c0c4ce6324bdb27be64"/>
+                  <file name="style.css" hash="2f893e7c6a356d72692f2abbfb45065a"/>
+                </dir>
+              </dir>
+            </dir>
+            <dir name="widgetbullet">
+              <dir name="transition">
+                <dir name="transition">
+                  <file name="bullet.js" hash="4114f1931c38921c9f7e06ad04fe5f52"/>
+                  <file name="style.css" hash="cd747bcc205f3211906c3ca843b4871d"/>
+                  <file name="transition.png" hash="d62ec57e80d2593a9898b9aadc0baea4"/>
+                  <file name="transitionBar.png" hash="25a9a8ef37a2713551eecb449d1050fe"/>
+                  <file name="transitionBorder.png" hash="e91fe18fd241dc66437e6d0d2a8217ba"/>
+                  <file name="transitionRectangle.png" hash="c8c7205697a76b4090e75430ceb553ed"/>
+                </dir>
+              </dir>
+            </dir>
+            <dir name="widgetshadow">
+              <dir name="shadow">
+                <dir name="shadow">
+                  <dir name="shadow">
+                    <file name="centered.png" hash="add4521af015ce261ad1fdd53ced0943"/>
+                    <file name="curved.png" hash="1e7e117d9dd2dbe3427ae0569a48938a"/>
+                    <file name="dark.png" hash="7699af516f7ebd949ab64332a433575c"/>
+                    <file name="float.png" hash="249911e29906728d9d81976ec0a9de7e"/>
+                    <file name="light.png" hash="ae7256c995126650661186d4f984dbc2"/>
+                    <file name="lights.png" hash="e4f79ef4d4884983c23ba9d9fbe186fc"/>
+                    <file name="simple.png" hash="b6ac0d4663c5c82a8a40412f90b0d771"/>
+                  </dir>
+                  <file name="shadow.js" hash="06daa2c9a218909c60d30bfdedfb87f4"/>
+                  <file name="shadow.png" hash="8db332859a6607879c0b8d140d49c3a4"/>
+                  <file name="style.css" hash="645cfbf4b81602e1b916b764866ed2d1"/>
+                </dir>
+              </dir>
+            </dir>
+            <dir name="widgetthumbnail">
+              <dir name="default">
+                <dir name="default">
+                  <file name="default.png" hash="194ded748ecb445f8ce85929055e0d48"/>
+                  <file name="defaultHorizontal.png" hash="dacac978b9c650dbdbd9c4bef2e64251"/>
+                  <file name="defaultHorizontalGallery.png" hash="c141eb878bdac3065addf9ebe42adc96"/>
+                  <file name="defaultVertical.png" hash="54dbe1eeef8665ac543202f7b11a4075"/>
+                  <file name="defaultVerticalText.png" hash="b5bfd5bd6398a675386e7b539b8c0063"/>
+                  <file name="style.less" hash="1427a9f40cba3ee797fe76b75eb4034f"/>
+                  <file name="thumbnail-down-arrow.svg" hash="b4e7552ab57055afcc4f566b174be23f"/>
+                  <file name="thumbnail-up-arrow.svg" hash="48cabd31aa7ac71ad041e5eebe16d77b"/>
+                  <file name="thumbnail.js" hash="73cccbaf1ae37bd64822af015b92c421"/>
+                </dir>
+              </dir>
+            </dir>
+          </dir>
+          <dir name="spinner">
+            <file name="infiniteDark.gif" hash="a5ed891201950b9e7dde2df608dd61d1"/>
+            <file name="infiniteWhite.gif" hash="147e21bc92f8c2145c0d78915496b812"/>
+            <file name="rectangleDark.gif" hash="3edad4d18cd515589e4d16866e5751b1"/>
+            <file name="simpleDark.gif" hash="53a369028da06990d446d4801d2109cb"/>
+            <file name="simpleWhite.gif" hash="b11c0c0f859bd15371ca5cff3a1a2302"/>
+          </dir>
+        </dir>
+      </dir>
+    </target>
+  </contents>
+</package>

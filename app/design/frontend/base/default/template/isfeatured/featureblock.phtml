@@ -1,0 +1,84 @@
+<?php
+/*
+ * Featured product Extension Developed by Magehit
+ */
+?>
+<?php
+$products = Mage::getModel('catalog/product')->getCollection();
+$products->addAttributeToSelect('*');
+$products->addAttributeToFilter('status', 1);
+$products->addAttributeToSelect('is_featured');
+$products->addFieldToFilter(array(
+			array('attribute' => 'is_featured', 'eq' => true),
+		));
+//var_dump($products->getData());die;
+$prodIds = $products->getAllIds();
+$ftotalproduct = count($prodIds);
+$_item = $this->getStoreconfig();
+$enable = $_item['enabled'];
+$title = $_item['horizontal_carousels_setting_title'];
+$limit = $_item['horizontal_carousels_setting_limit'];
+$slide_itemsonpage = $_item['horizontal_carousels_setting_slide_itemsonpage'];
+$slide_auto = $_item['horizontal_carousels_setting_slide_auto'];
+	if($slide_auto == 1) $slide_auto = 'true'; else $slide_auto = 'false';
+$slide_navigation = $_item['horizontal_carousels_setting_slide_navigation'];
+	if($slide_navigation == 1) $slide_navigation = 'true'; else $slide_navigation = 'false';
+
+?>
+<?php if ($enable): ?>
+    <div class="featured">
+        <div class="fhead">
+            <h2 class="subtitle"><?php echo $this->__($title); ?></h2>
+        </div>
+        <?php if ($ftotalproduct): ?>
+            <div id="owl-featuredproducts" class="owl-carousel">
+                    <?php $count = 1; ?>
+                    <?php foreach ($products as $_product) : ?>
+                        <?php if ($count <= $limit): ?>
+                            <div class="item">
+                                <a href="<?php echo $this->getUrl($_product->getUrlPath()) ?>" >
+                                    <span>
+                                        <img class="lazyOwl" data-src="<?php echo $this->helper('catalog/image')->init($_product, 'small_image')->resize(260) ?>" alt="<?php echo $this->htmlEscape($_product->getName()) ?>" title="<?php echo $this->htmlEscape($_product->getName()) ?>" />
+                                    </span>
+                                </a>
+                                <h3 class="product-name">
+                                    <a href="<?php echo $this->getUrl($_product->getUrlPath()) ?>" ><?php echo $_product->getName(); ?>
+                                    </a>                   
+                                </h3>
+                                <span class="price-con">
+								<?php									
+									echo Mage::helper('core')->currency($_product->getFinalPrice(),true,false);
+								?>
+								</span>
+                                <span class="fadd">
+                                    <p>
+                                        <button type="button" title="<?php echo $this->__('Add to Cart') ?>" class="button btn-cart" onclick="setLocation(' <?php echo $this->helper('checkout/cart')->getAddUrl($_product) ?>')"><span><span><?php echo $this->__('Add to Cart') ?></span></span></button>
+                                    </p>
+                                </span>
+                            </div>
+                    <?php endif; ?>
+                    <?php $count++ ?>
+                <?php endforeach; ?>
+            </div>
+    </div>
+    <?php else: ?>
+        <div class="show-msg">
+            <?php echo $this->__("There are no feature products."); ?> 
+        </div>
+    <?php endif; ?>
+<?php endif; ?>
+<script type="text/javascript">
+	var $fp = jQuery.noConflict();
+    $fp(document).ready(function() {
+      $fp("#owl-featuredproducts").owlCarousel({
+        items : <?php echo $slide_itemsonpage ?>,
+        lazyLoad : true,
+		autoPlay : <?php echo $slide_auto ?>,
+        navigation : <?php echo $slide_navigation ?>
+      }); 
+     
+    });
+</script>
+
+
+

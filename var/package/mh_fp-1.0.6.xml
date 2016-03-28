@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package>
+    <name>mh_fp</name>
+    <version>1.0.6</version>
+    <stability>stable</stability>
+    <license uri="http://opensource.org/licenses/osl-3.0.php">Open Software License (OSL)</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Featured Products version 1.0.6&#xD;
+* Fixed the problem with Permission &gt; Block on Magento 1.9.2.2</summary>
+    <description>Featured Products version 1.0.6&#xD;
+Fixed the problem with Permission &gt; Block on Magento 1.9.2.2</description>
+    <notes>Featured Products version 1.0.6&#xD;
+* Fixed the problem with Permission &gt; Block on Magento 1.9.2.2</notes>
+    <authors><author><name>MageHit</name><user>magehit</user><email>support@magehit.com</email></author></authors>
+    <date>2015-11-02</date>
+    <time>04:21:01</time>
+    <contents><target name="magelocal"><dir name="Magehit"><dir name="Isfeatured"><dir name="Block"><file name="Isfeatured.php" hash="990b08dcb8caaa87419439ca7c319d89"/></dir><dir name="Helper"><file name="Data.php" hash="a90fcc64a218b672612b926c0a957de4"/></dir><dir name="controllers"><file name="IndexController.php" hash="66d93ddbc635e4926eb08404868058bb"/><file name="IndexController.php~" hash="2bee997404321795ac6a6397f46e4542"/><file name="IsfeaturedController.php~" hash="5d938d5e2cc4613493b330dd330d8f42"/></dir><dir name="etc"><file name="config.xml" hash="57393b4d21a77df82f72cb78a096c634"/><file name="system.xml" hash="bd8f3e23df7450fbeed0c6f8065a8054"/></dir><dir name="sql"><dir name="isfeatured_setup"><file name="mysql4-install-1.0.0.5.php" hash="fa7b3f195f11590a3653225ea3aeb03e"/><file name="mysql4-install-1.0.2.php" hash="fa7b3f195f11590a3653225ea3aeb03e"/><file name="mysql4-upgrade-1.0.2-1.0.6.php" hash="60420feea8927575f407feb0e3e7b0cb"/></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Magehit_Isfeatured.xml" hash="5a52d884676e4d54e3cd2e7c166a10d6"/></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><file name="isfeatured.xml" hash="a615d88c435bae2b935d4af555c355bb"/></dir><dir name="template"><dir name="isfeatured"><file name="featureblock.phtml" hash="f2934268d1f94c383597536383bb6fc8"/><file name="vertical_featureblock.phtml" hash="1ccdd93aa10c664f215313e2d482804d"/></dir></dir></dir></dir></dir></target><target name="mageskin"><dir name="frontend"><dir name="base"><dir name="default"><dir name="css"><dir name="featured"><file name="AjaxLoader.gif" hash="931bdb6b50816b03206c66921760b246"/><file name="AjaxLoader2.gif" hash="5b8b06c052cac80413d62e5c45f9f37b"/><file name="grabbing.png" hash="d817e1dba5bd5d891d0504bf1715807b"/><file name="owl.carousel.css" hash="0371b5a2d50e985b09b7d337edc0dc9f"/><file name="owl.theme.css" hash="8d488fc3b1bcd0e15dc0f2143a8b2b95"/><file name="owl.transitions.css" hash="b1bdaeac4065bf67a7d7a06213192964"/></dir></dir><dir name="js"><dir name="featured"><file name="jquery-1.10.2.min.js" hash="628072e7212db1e8cdacb22b21752cda"/><file name="noconflict.js" hash="aec10679a7650d537d78e9faebf29463"/><file name="owl.carousel.js" hash="a5f96c62d75be144282ef6cc429a6259"/><file name="owl.carousel.min.js" hash="88d0fe722f04973e2888b58a63aa0570"/></dir></dir></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.0.0</min><max>6.0.0</max></php></required></dependencies>
+</package>

@@ -1,0 +1,9 @@
+<?php
+
+$controller = 'dashboard';
+$action     = 'index';
+N2Base::getApplication("system")->getApplicationType('backend')->setCurrent()->render(array(
+    "controller" => $controller,
+    "action"     => $action
+));
+n2_exit();

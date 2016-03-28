@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <default>
+        <reference name="head">
+            <action method="addCss">
+                <stylesheet>css/featured/owl.carousel.css</stylesheet>
+            </action>
+			<action method="addCss">
+                <stylesheet>css/featured/owl.theme.css</stylesheet>
+            </action>
+			<action method="addCss">
+                <stylesheet>css/featured/owl.transitions.css</stylesheet>
+            </action>
+       
+            <action method="addItem" ifconfig="isfeatured/genneral_setting/jqueryinclude">
+                <type>skin_js</type>
+                <name>js/featured/jquery-1.10.2.min.js</name>
+                <params/>
+                <if/>
+            </action>
+			<action method="addItem">
+                <type>skin_js</type>
+                <name>js/featured/noconflict.js</name>
+            </action>
+			<action method="addItem">
+                <type>skin_js</type>
+                <name>js/featured/owl.carousel.js</name>
+            </action>
+        </reference>
+        
+		<reference name="right">
+            <block type="isfeatured/isfeatured" name="right.isfeatured" as="right_isfeatured" before="++" template="isfeatured/vertical_featureblock.phtml" />
+        </reference>
+    </default>
+    <!-- <cms_index_index>
+        <reference name="content">
+            <block type="isfeatured/isfeatured" name="isfeatured" as="isfeatured"  template="isfeatured/featureblock.phtml" />
+        </reference>
+    </cms_index_index> -->
+</layout> 

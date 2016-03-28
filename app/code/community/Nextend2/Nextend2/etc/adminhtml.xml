@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <menu>
+        <nextend2_nextend2 translate="title" module="nextend2_nextend2">
+            <title>Nextend</title>
+            <sort_order>85</sort_order>
+            <action>adminhtml/nextend2/index</action>
+            <children>
+                <nextend2_nextend2 translate="title" module="nextend2_nextend2">
+                    <title>Nextend Configuration</title>
+                    <sort_order>87</sort_order>
+                    <action>adminhtml/nextend2/index</action>
+                </nextend2_nextend2>
+            </children>
+        </nextend2_nextend2>
+    </menu>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <nextend2library translate="title" module="nextend2_nextend2">
+                        <title>Nextend2 Library</title>
+                        <sort_order>-100</sort_order>
+                        <children>
+                            <index translate="title">
+                                <title>Index Action</title>
+                                <sort_order>1</sort_order>
+                            </index>
+                        </children>
+                    </nextend2library>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>

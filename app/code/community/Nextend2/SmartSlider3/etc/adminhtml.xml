@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<config>
+    <menu>
+        <nextend2_nextend2>
+            <children>
+                <nextend2smartslider3 translate="title" module="nextend2smartslider3">
+                    <title>Smart Slider 3</title>
+                    <sort_order>86</sort_order>
+                    <action>adminhtml/smartslider3/index</action>
+                </nextend2smartslider3>
+            </children>
+        </nextend2_nextend2>
+    </menu>
+</config>

@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<widgets>
+    <smartslider3 type="nextend2smartslider3/slider">
+        <name>Smart Slider 3</name>
+        <description type="desc"></description>
+        <parameters>
+            <slider>
+                <label>Slider</label>
+                <visible>1</visible>
+                <required>1</required>
+                <type>select</type>
+                <source_model>nextend2smartslider3/sliders</source_model>
+            </slider>
+        </parameters>
+    </smartslider3>
+</widgets> 

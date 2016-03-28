@@ -1,0 +1,93 @@
+<?php if ((Mage::getSingleton('cms/page')->getIdentifier()=='home') || (Mage::getSingleton('cms/page')->getIdentifier()=='about_us') || (Mage::getSingleton('cms/page')->getIdentifier()=='delivery')):?>
+<ul class="main_menu_items">
+    <?php
+        $obj = new Mage_Catalog_Block_Navigation();
+        $storeCategories = $obj->getStoreCategories();
+        Mage::registry('current_category') ? $currentCategoryId = Mage::registry('current_category')->getId() : $currentCategoryId='';
+        foreach ($storeCategories as $_category):
+    ?>
+            <?php 
+                $_categoryParentModel = Mage::getModel('catalog/category')->load($_category->getId());
+                $_categoryParentUrl = $_categoryParentModel->getUrl();
+            ?>
+            <li class="<?php echo (strpos(Mage::helper('core/url')->getCurrentUrl(), $_categoryParentUrl) === 0) ? "active ": "inactive";?> onmain">
+               <a href="<?php echo $_categoryParentUrl ?>"><div><?php echo $_category->getName(); ?></div></a>
+                <?php $categoryChildren = $_category->getChildren(); ?>
+                <?php if($categoryChildren->count()) : ?>
+                    <ul class="sub_menu_items">
+                        <?php foreach($categoryChildren as $_categoryChild) : ?>
+                            <?php $_categoryChildModel = Mage::getModel('catalog/category')->load($_categoryChild->getId());?>
+                            <?php $_categoryChildUrl = $_categoryChildModel->getUrl(); ?>
+                            <?php $categoryGrandchildren=$_categoryChild->getChildren(); ?>
+                            <li class="<?php echo (strpos(Mage::helper('core/url')->getCurrentUrl(), $_categoryChildUrl) === 0) ? "sub_active" : "sub_inactive"; ?>">
+                                <?php
+                                    echo '&emsp;' . '<a href="' . $_categoryChildModel->getUrl() . '"' . '>' .  $_categoryChild->getName() . '</a>';
+                                ?>
+                                <?php if($categoryGrandchildren->count()) : ?>
+                                    <ul class="last_items">
+                                        <?php foreach($categoryGrandchildren as $_categoryGrandchild) : ?>
+                                            <?php $_categoryGrandchildModel = Mage::getModel('catalog/category')->load($_categoryGrandchild->getId());?>
+                                            <?php $_categoryGrandchildUrl = $_categoryGrandchildModel->getUrl();?>
+                                                 <li class="<?php echo (strpos(Mage::helper('core/url')->getCurrentUrl(), $_categoryGrandchildUrl) === 0) ? "subsub_active" : "subsub_inactive"; ?>">
+                                                    <?php
+                                                        echo '&emsp;&emsp;' . '<a href="' . $_categoryGrandchildUrl . '"' . $bold . '>' .  $_categoryGrandchild->getName() . '</a>';
+                                                    ?>
+                                                </li>
+                                        <?php endforeach; ?>
+                                    </ul>
+                                <?php endif; ?>
+                            </li>
+                        <?php endforeach; ?>
+                    </ul>
+                <?php endif; ?>
+            </li>
+        <?php endforeach ?>
+</ul>
+
+
+<?php else: ?>
+<ul class="main_menu_items">
+    <?php
+        $obj = new Mage_Catalog_Block_Navigation();
+        $storeCategories = $obj->getStoreCategories();
+        Mage::registry('current_category') ? $currentCategoryId = Mage::registry('current_category')->getId() : $currentCategoryId='';
+        foreach ($storeCategories as $_category):
+    ?>
+            <?php 
+                $_categoryParentModel = Mage::getModel('catalog/category')->load($_category->getId());
+                $_categoryParentUrl = $_categoryParentModel->getUrl();
+            ?>
+            <li class="<?php echo (strpos(Mage::helper('core/url')->getCurrentUrl(), $_categoryParentUrl) === 0) ? "active" : "inactive";?> oncustom">
+               <a href="<?php echo $_categoryParentUrl ?>"><div><?php echo $_category->getName(); ?></div></a>
+                <?php $categoryChildren = $_category->getChildren(); ?>
+                <?php if($categoryChildren->count()) : ?>
+                    <ul class="sub_menu_items">
+                        <?php foreach($categoryChildren as $_categoryChild) : ?>
+                            <?php $_categoryChildModel = Mage::getModel('catalog/category')->load($_categoryChild->getId());?>
+                            <?php $_categoryChildUrl = $_categoryChildModel->getUrl(); ?>
+                            <?php $categoryGrandchildren=$_categoryChild->getChildren(); ?>
+                            <li class="<?php echo (strpos(Mage::helper('core/url')->getCurrentUrl(), $_categoryChildUrl) === false) ? "sub_inactive" : "sub_active";?>">
+                                <?php
+                                    echo '&emsp;' . '<a href="' . $_categoryChildModel->getUrl() . '"' . '>' .  $_categoryChild->getName() . '</a>';
+                                ?>
+                                <?php if($categoryGrandchildren->count()) : ?>
+                                    <ul class="last_items">
+                                        <?php foreach($categoryGrandchildren as $_categoryGrandchild) : ?>
+                                            <?php $_categoryGrandchildModel = Mage::getModel('catalog/category')->load($_categoryGrandchild->getId());?>
+                                            <?php $_categoryGrandchildUrl = $_categoryGrandchildModel->getUrl();?>
+                                             <li class="<?php echo (strpos(Mage::helper('core/url')->getCurrentUrl(), $_categoryGrandchildUrl) === 0) ? "subsub_active" : "subsub_inactive"; ?>">
+                                                <?php
+                                                    echo '&emsp;&emsp;' . '<a href="' . $_categoryGrandchildUrl . '"' . $bold . '>' .  $_categoryGrandchild->getName() . '</a>';
+                                                ?>
+                                            </li>
+                                        <?php endforeach; ?>
+                                    </ul>
+                                <?php endif; ?>
+                            </li>
+                        <?php endforeach; ?>
+                    </ul>
+                <?php endif; ?>
+            </li>
+        <?php endforeach ?>
+</ul>
+<?php endif ?>

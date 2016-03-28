@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout version="2.0.15">
+    <adminhtml_nextend2_index>
+        <reference name="content">
+            <block type="core/template" name="nextend2" template="nextend2/index.phtml"></block>
+        </reference>
+    </adminhtml_nextend2_index>
+</layout>
